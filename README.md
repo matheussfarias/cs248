@@ -7,7 +7,6 @@ This repository contains the project Matrix-to-Vector Multiplication Leveraging 
 </p>
 
 ## Milestones
----
 
 ### Apr. 24
 

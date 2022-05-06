@@ -3,7 +3,7 @@
 This repository contains the project Matrix-to-Vector Multiplication Leveraging RRAM Crossbar that I developed for CS248 - Advanced Design of VLSI Circuits and Systems taught by Prof. Gage Hills in the Spring of 2022.
 
 <p align="center">
-  <img  src="https://raw.githubusercontent.com/matheussfarias/cs248/master/gage_proposal.pdf">
+  <img  src="https://raw.githubusercontent.com/matheussfarias/cs248/master/gage_proposal.png">
 </p>
 
 ## Milestones

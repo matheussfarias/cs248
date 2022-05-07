@@ -3,7 +3,12 @@ import numpy as np
 import os
 
 # opening files
-f_read = open("simulation/tran.tran.tr0", "r")
+#test
+#f_read = open("simulation/test_tran.tran.tr0", "r")
+
+#actual
+f_read = open("simulation/actual_tran.tran.tr0", "r")
+
 f_write = open("simulation/lookuptable.txt", "w")
 
 # creating image folder
@@ -67,6 +72,8 @@ net1 = np.array(net1)
 netvg = np.array(netvg)
 netvd = np.array(netvd)
 vg = np.array(vg)
+r = abs(netvd/(vd+1e-12))
+
 
 # plotting graphs
 plt.plot(netvd, abs(vd), color = 'crimson', linewidth=3.0)
@@ -97,11 +104,23 @@ plt.close()
 plt.cla()
 plt.clf()
 
-plt.plot(time*1e+6, vd*1e+6, color = 'crimson', linewidth=3.0)
+plt.plot(time*1e+9, vd*1e+6, color = 'crimson', linewidth=3.0)
 plt.title(r'$I_D$ vs Time')
-plt.xlabel(r'Time [$\mu$s]')
+plt.xlabel(r'Time [ns]')
 plt.ylabel(r'$I_D$ [$\mu$A]')
 plt.savefig('images/id_vs_time.pdf')
+#plt.savefig('images/id_vs_time.png', dpi=500)
+#plt.show()
+plt.figure().clear()
+plt.close()
+plt.cla()
+plt.clf()
+
+plt.plot(time*1e+9, r*(1e-3), color = 'crimson', linewidth=3.0)
+plt.title(r'$R$ vs Time')
+plt.xlabel(r'Time [ns]')
+plt.ylabel(r'$R$ [k$\Omega$]')
+plt.savefig('images/r_vs_time.pdf')
 #plt.savefig('images/id_vs_time.png', dpi=500)
 #plt.show()
 plt.figure().clear()

@@ -14,7 +14,8 @@ This repository contains the project Matrix-to-Vector Multiplication Leveraging 
 4. Run `make clean` and `make sim` at `rram_model/netlist_mine` in the cluster terminal;
 5. Go to `rram_model/netlist_mine/input.rram.raw/`;
 6. Copy the file `tran.tran.tr0`, come back to the folder `code/simulation/` and paste it there;
-7. Go to `code/` and run `make clean` and `make` in the terminal.
+7. Go to `code/` and run `make clean` and `make` in the terminal;
+8. The plots will be shown in `code/images`.
 
 Make sure to read the example in line 35 of `code/simulation/input.rram.scs` to follow the same pattern. **Always use the time in nanoseconds**.
 

@@ -22,8 +22,8 @@ def raw_to_plottable(a):
     return v
 
 # Spectre Input
-# VG (net_vg 0) vsource type=pwl wave=[ 0 1.5 400n 1.5 450n 2 1u 2 1.01u 1.5 1.4u 1.5 1.45u 2 2u 2]
-# VD (net_vd 0) vsource type=pwl wave=[ 0 0 200n 2.5 600n -2.5 800n 0 1u 0 1.2u 2.5 1.6u -2.5 1.8u 0 2u 0]
+# VG (net_vg 0) vsource type=pwl wave=[ 0 1.5 400n 1.5 450n 2 1000n 2 1010n 1.5 1400n 1.5 1450n 2 2000n 2]
+# VD (net_vd 0) vsource type=pwl wave=[ 0 0 200n 2.5 600n -2.5 800n 0 1000n 0 1200n 2.5 1600n -2.5 1800n 0 2000n 0]
 f_read = open("simulation/input.rram.scs", "r")
 
 count=0
@@ -43,7 +43,6 @@ v_gs = raw_to_plottable(vg_raw)
 v_ds = raw_to_plottable(vd_raw)
 
 t = np.arange(len(v_gs))
-
 '''
 v_gsc = np.concatenate((1.5*np.ones(400), 
                      np.linspace(1.5, 2, 50), 

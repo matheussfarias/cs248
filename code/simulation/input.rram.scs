@@ -29,12 +29,12 @@ I0 (net_vd net1) rram0
 
 
 
-VG (net_vg 0) vsource type=pwl wave=[ 0 1.5 1000000n 1.5]
-//test if working
-//VD (net_vd 0) vsource type=pwl wave=[ 0  200n 2.5 600n -2.5 800n 0 1000n 0 1200n 2.5 1600n -2.5 1800n 0 2000n 0]
+VG (net_vg 0) vsource type=pwl wave=[ 0 1.5 300n 1.5 310n 2 1000n 2 1010n 1.5 1400n 1.5 1410n 2 2000n 2]
 
+//test if working
+//VD (net_vd 0) vsource type=pwl wave=[ 0 0 200n 2.5 600n -2.5 800n 0 1000n 0 1200n 2.5 1600n -2.5 1800n 0 2000n 0]
 //actual simulation
-VD (net_vd 0) vsource type=pwl wave=[ 0 -2.5 1000000n -2.5]
+VD (net_vd 0) vsource type=pwl wave=[ 0 0 200n 2.5 600n -2.5 800n 0 1000n 0 1200n 2.5 1600n -2.5 1800n 0 2000n 0]
 simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
     iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
     maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \

@@ -7,7 +7,7 @@ import os
 #f_read = open("simulation/test_tran.tran.tr0", "r")
 
 #actual
-f_read = open("simulation/actual_tran.tran.tr0", "r")
+f_read = open("simulation/tran.tran.tr0", "r")
 
 f_write = open("simulation/lookuptable.txt", "w")
 
@@ -50,7 +50,6 @@ net1=[]
 netvg=[]
 netvd=[]
 vg=[]
-unnamed=[]
 
 for i in range(0,len(data)):
     if i%6==0:

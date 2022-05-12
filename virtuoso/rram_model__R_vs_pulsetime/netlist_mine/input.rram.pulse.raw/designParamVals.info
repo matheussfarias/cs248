@@ -1,0 +1,2602 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "20.1.0.404.isr13"
+"date" "5:57:51 PM, Mon May 9, 2022"
+"design" "// Generated for: spectre"
+"analysis type" "info"
+"analysis name" "designParamVals"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"top-level" STRUCT(
+"temp" FLOAT DOUBLE
+"tnom" FLOAT DOUBLE
+"time" FLOAT DOUBLE
+"__bsim4_diomod" FLOAT DOUBLE
+"xsf__mos" FLOAT DOUBLE
+"xsf__dio" FLOAT DOUBLE
+"xsf__res" FLOAT DOUBLE
+"xsf__cap" FLOAT DOUBLE
+"xsf__" FLOAT DOUBLE
+"cqn_tox" FLOAT DOUBLE
+"cqn_vth0_d" FLOAT DOUBLE
+"cqn_xl" FLOAT DOUBLE
+"cqn_xw" FLOAT DOUBLE
+"cqndg_tox" FLOAT DOUBLE
+"cqndg_vth0_d" FLOAT DOUBLE
+"cqndg_xl" FLOAT DOUBLE
+"cqndg_xw" FLOAT DOUBLE
+"cp1sub_ca" FLOAT DOUBLE
+"cp1sub_cp" FLOAT DOUBLE
+"corner_cap" FLOAT DOUBLE
+"mcmode_cap" FLOAT DOUBLE
+"cmimcaprf_vari" FLOAT DOUBLE
+"tox2v_wcr_nmos" FLOAT DOUBLE
+"neff2v_wcr_nmos" FLOAT DOUBLE
+"vfb2v_wca_nmos" FLOAT DOUBLE
+"tox1v_wcr_nmos" FLOAT DOUBLE
+"neff1v_wcr_nmos" FLOAT DOUBLE
+"vfb1v_wca_nmos" FLOAT DOUBLE
+"cmimcaprf_cgpacap_tol" FLOAT DOUBLE
+"cmimcaprf_cgswcap_tol" FLOAT DOUBLE
+"cmimcaprf_areasubcap_tol" FLOAT DOUBLE
+"cmimcaprf_fringesubcap_tol" FLOAT DOUBLE
+"cmimcaprf_rcn_tol" FLOAT DOUBLE
+"cmimcaprf_rshte_tol" FLOAT DOUBLE
+"cmimcaprf_rshbe_tol" FLOAT DOUBLE
+"cmimcaprf_rshfl_tol" FLOAT DOUBLE
+"cmimcaprf_mr" FLOAT DOUBLE
+"toxo1v_mcpr_std" FLOAT DOUBLE
+"toxo1v_misr_std" FLOAT DOUBLE
+"tox2v_mcpr_std" FLOAT DOUBLE
+"tox2v_misr_std" FLOAT DOUBLE
+"tox2v_mcpr_tol" FLOAT DOUBLE
+"tox2v_misr_tol" FLOAT DOUBLE
+"vfb2v_mcpa_std" FLOAT DOUBLE
+"vfb2v_misa_std" FLOAT DOUBLE
+"vfb2v_mcpa_tol" FLOAT DOUBLE
+"vfb2v_misa_tol" FLOAT DOUBLE
+"neff2v_mcpr_std" FLOAT DOUBLE
+"neff2v_misr_std" FLOAT DOUBLE
+"neff2v_mcpr_tol" FLOAT DOUBLE
+"neff2v_misr_tol" FLOAT DOUBLE
+"cvppm1m4_areacap_tol" FLOAT DOUBLE
+"cvppm1m4_areasubcap_tol" FLOAT DOUBLE
+"cvppm1m4_fringecap_tol" FLOAT DOUBLE
+"cvppm1m4_fringesubcap_tol" FLOAT DOUBLE
+"cvppm1m4_rsertot_tol" FLOAT DOUBLE
+"cvppm1m4_mr" FLOAT DOUBLE
+"cvppm1m4nw_areacap_tol" FLOAT DOUBLE
+"cvppm1m4nw_areasubcap_tol" FLOAT DOUBLE
+"cvppm1m4nw_fringecap_tol" FLOAT DOUBLE
+"cvppm1m4nw_fringesubcap_tol" FLOAT DOUBLE
+"cvppm1m4nw_rsertot_tol" FLOAT DOUBLE
+"cvppm1m4nw_mr" FLOAT DOUBLE
+"cvppm1m4MQ_areacap_tol" FLOAT DOUBLE
+"cvppm1m4MQ_areasubcap_tol" FLOAT DOUBLE
+"cvppm1m4MQ_fringecap_tol" FLOAT DOUBLE
+"cvppm1m4MQ_fringesubcap_tol" FLOAT DOUBLE
+"cvppm1m4MQ_rsertot_tol" FLOAT DOUBLE
+"cvppm1m4MQ_mr" FLOAT DOUBLE
+"cvppm1m4MQnw_areacap_tol" FLOAT DOUBLE
+"cvppm1m4MQnw_areasubcap_tol" FLOAT DOUBLE
+"cvppm1m4MQnw_fringecap_tol" FLOAT DOUBLE
+"cvppm1m4MQnw_fringesubcap_tol" FLOAT DOUBLE
+"cvppm1m4MQnw_rsertot_tol" FLOAT DOUBLE
+"cvppm1m4MQnw_mr" FLOAT DOUBLE
+"cvppm1m2MQ_areacap_tol" FLOAT DOUBLE
+"cvppm1m2MQ_areasubcap_tol" FLOAT DOUBLE
+"cvppm1m2MQ_fringecap_tol" FLOAT DOUBLE
+"cvppm1m2MQ_fringesubcap_tol" FLOAT DOUBLE
+"cvppm1m2MQ_rsertot_tol" FLOAT DOUBLE
+"cvppm1m2MQ_mr" FLOAT DOUBLE
+"cvppm1m2MQnw_areacap_tol" FLOAT DOUBLE
+"cvppm1m2MQnw_areasubcap_tol" FLOAT DOUBLE
+"cvppm1m2MQnw_fringecap_tol" FLOAT DOUBLE
+"cvppm1m2MQnw_fringesubcap_tol" FLOAT DOUBLE
+"cvppm1m2MQnw_rsertot_tol" FLOAT DOUBLE
+"cvppm1m2MQnw_mr" FLOAT DOUBLE
+"cvppm1m2_areacap_tol" FLOAT DOUBLE
+"cvppm1m2_areasubcap_tol" FLOAT DOUBLE
+"cvppm1m2_fringecap_tol" FLOAT DOUBLE
+"cvppm1m2_fringesubcap_tol" FLOAT DOUBLE
+"cvppm1m2_rsertot_tol" FLOAT DOUBLE
+"cvppm1m2_mr" FLOAT DOUBLE
+"cvppm1m2nw_areacap_tol" FLOAT DOUBLE
+"cvppm1m2nw_areasubcap_tol" FLOAT DOUBLE
+"cvppm1m2nw_fringecap_tol" FLOAT DOUBLE
+"cvppm1m2nw_fringesubcap_tol" FLOAT DOUBLE
+"cvppm1m2nw_rsertot_tol" FLOAT DOUBLE
+"cvppm1m2nw_mr" FLOAT DOUBLE
+"cvppm1m3_areacap_tol" FLOAT DOUBLE
+"cvppm1m3_areasubcap_tol" FLOAT DOUBLE
+"cvppm1m3_fringecap_tol" FLOAT DOUBLE
+"cvppm1m3_fringesubcap_tol" FLOAT DOUBLE
+"cvppm1m3_rsertot_tol" FLOAT DOUBLE
+"cvppm1m3_mr" FLOAT DOUBLE
+"cvppm1m3nw_areacap_tol" FLOAT DOUBLE
+"cvppm1m3nw_areasubcap_tol" FLOAT DOUBLE
+"cvppm1m3nw_fringecap_tol" FLOAT DOUBLE
+"cvppm1m3nw_fringesubcap_tol" FLOAT DOUBLE
+"cvppm1m3nw_rsertot_tol" FLOAT DOUBLE
+"cvppm1m3nw_mr" FLOAT DOUBLE
+"analog_dio_rs_res_mul" FLOAT DOUBLE
+"analog_dio_isf_mul_exp" FLOAT DOUBLE
+"analog_dio_isr_mul_exp" FLOAT DOUBLE
+"analog_dio_bot_mul" FLOAT DOUBLE
+"analog_dio_sti_mul" FLOAT DOUBLE
+"analog_dio_gat_mul" FLOAT DOUBLE
+"dn2_rs_res_mul" FLOAT DOUBLE
+"dn2_is_mul_exp" FLOAT DOUBLE
+"dn2_bot_mul" FLOAT DOUBLE
+"dn2_sti_mul" FLOAT DOUBLE
+"dn2_gat_mul" FLOAT DOUBLE
+"dp2_rs_res_mul" FLOAT DOUBLE
+"dp2_is_mul_exp" FLOAT DOUBLE
+"dp2_bot_mul" FLOAT DOUBLE
+"dp2_sti_mul" FLOAT DOUBLE
+"dp2_gat_mul" FLOAT DOUBLE
+"corner_dio" FLOAT DOUBLE
+"mcmode_dio" FLOAT DOUBLE
+"idsatrbot2v_wcr_nmos" FLOAT DOUBLE
+"wvar2v_wca_nmos" FLOAT DOUBLE
+"cjorbot2v_wcr_nmos" FLOAT DOUBLE
+"pbot_wca" FLOAT DOUBLE
+"vbirbot_wca" FLOAT DOUBLE
+"vbrbot_wca" FLOAT DOUBLE
+"npdio_vari" FLOAT DOUBLE
+"wvar2v_mcpa_std" FLOAT DOUBLE
+"wvar2v_misa_std" FLOAT DOUBLE
+"wvar2v_mcpa_tol" FLOAT DOUBLE
+"wvar2v_misa_tol" FLOAT DOUBLE
+"cjorbot2v_mcpr_std" FLOAT DOUBLE
+"cjorbot2v_misr_std" FLOAT DOUBLE
+"cjorbot2v_mcpr_tol" FLOAT DOUBLE
+"cjorbot2v_misr_tol" FLOAT DOUBLE
+"idsatrbot2v_mcpr_std" FLOAT DOUBLE
+"idsatrbot2v_misr_std" FLOAT DOUBLE
+"idsatrbot2v_mcpr_tol" FLOAT DOUBLE
+"idsatrbot2v_misr_tol" FLOAT DOUBLE
+"vbirbot_mcpa_std" FLOAT DOUBLE
+"vbirbot_misa_std" FLOAT DOUBLE
+"vbirbot_mcpa_tol" FLOAT DOUBLE
+"vbirbot_misa_tol" FLOAT DOUBLE
+"vbrbot_mcpa_std" FLOAT DOUBLE
+"vbrbot_misa_std" FLOAT DOUBLE
+"vbrbot_mcpa_tol" FLOAT DOUBLE
+"vbrbot_misa_tol" FLOAT DOUBLE
+"pbot_mcpa_std" FLOAT DOUBLE
+"pbot_misa_std" FLOAT DOUBLE
+"pbot_mcpa_tol" FLOAT DOUBLE
+"pbot_misa_tol" FLOAT DOUBLE
+"npdio_is_tol" FLOAT DOUBLE
+"npdio_isw_tol" FLOAT DOUBLE
+"npdio_cjo_tol" FLOAT DOUBLE
+"npdio_cjsw_tol" FLOAT DOUBLE
+"corner_ind" FLOAT DOUBLE
+"mcmode_ind" FLOAT DOUBLE
+"nmos2vbc_toxe" FLOAT DOUBLE
+"nmos2vbc_u0_mul" FLOAT DOUBLE
+"nmos2vbc_k1_mul" FLOAT DOUBLE
+"nmos2vbc_vth0_add" FLOAT DOUBLE
+"nmos2vbc_rsh" FLOAT DOUBLE
+"nmos2vbc_rshg" FLOAT DOUBLE
+"nmos2vbc_cgdo" FLOAT DOUBLE
+"nmos2vbc_cgso" FLOAT DOUBLE
+"nmos2vbc_vtmm" FLOAT DOUBLE
+"nmos2vbc_u0mm" FLOAT DOUBLE
+"pmos2vbc_toxe" FLOAT DOUBLE
+"pmos2vbc_u0_mul" FLOAT DOUBLE
+"pmos2vbc_nfactor_mul" FLOAT DOUBLE
+"pmos2vbc_k1_mul" FLOAT DOUBLE
+"pmos2vbc_voff_mul" FLOAT DOUBLE
+"pmos2vbc_vth0_add" FLOAT DOUBLE
+"pmos2vbc_vsat_mul" FLOAT DOUBLE
+"pmos2vbc_rsh" FLOAT DOUBLE
+"pmos2vbc_rshg" FLOAT DOUBLE
+"pmos2vbc_xl" FLOAT DOUBLE
+"pmos2vbc_xw" FLOAT DOUBLE
+"pmos2vbc_rdsw_mul" FLOAT DOUBLE
+"pmos2vbc_cgdo" FLOAT DOUBLE
+"pmos2vbc_cgso" FLOAT DOUBLE
+"pmos2vbc_vtmm" FLOAT DOUBLE
+"pmos2vbc_u0mm" FLOAT DOUBLE
+"nmos2vht_4_toxe" FLOAT DOUBLE
+"nmos2vht_4_u0_mul" FLOAT DOUBLE
+"nmos2vht_4_nfactor_mul" FLOAT DOUBLE
+"nmos2vht_4_vth0_add" FLOAT DOUBLE
+"nmos2vht_4_rsh" FLOAT DOUBLE
+"nmos2vht_4_rshg" FLOAT DOUBLE
+"nmos2vht_4_xl" FLOAT DOUBLE
+"nmos2vht_4_xw" FLOAT DOUBLE
+"nmos2vht_4_rdsw_mul" FLOAT DOUBLE
+"nmos2vht_4_cgdo" FLOAT DOUBLE
+"nmos2vht_4_cgso" FLOAT DOUBLE
+"nmos2vht_4_vtmm" FLOAT DOUBLE
+"nmos2vht_4_u0mm" FLOAT DOUBLE
+"pmos2vht_4_toxe" FLOAT DOUBLE
+"pmos2vht_4_u0_mul" FLOAT DOUBLE
+"pmos2vht_4_nfactor_mul" FLOAT DOUBLE
+"pmos2vht_4_vth0_add" FLOAT DOUBLE
+"pmos2vht_4_vsat_mul" FLOAT DOUBLE
+"pmos2vht_4_rsh" FLOAT DOUBLE
+"pmos2vht_4_rshg" FLOAT DOUBLE
+"pmos2vht_4_xl" FLOAT DOUBLE
+"pmos2vht_4_xw" FLOAT DOUBLE
+"pmos2vht_4_cgdo" FLOAT DOUBLE
+"pmos2vht_4_cgso" FLOAT DOUBLE
+"pmos2vht_4_vtmm" FLOAT DOUBLE
+"pmos2vht_4_u0mm" FLOAT DOUBLE
+"corner" FLOAT DOUBLE
+"mcmode" FLOAT DOUBLE
+"recenter_vth0_nmos" FLOAT DOUBLE
+"recenter_u0_nmos" FLOAT DOUBLE
+"recenter_cgdo_nmos" FLOAT DOUBLE
+"recenter_vth0_pmos" FLOAT DOUBLE
+"recenter_u0_pmos" FLOAT DOUBLE
+"recenter_cgdo_pmos" FLOAT DOUBLE
+"tox_wcr_nmos" FLOAT DOUBLE
+"ndep_wcr_nmos" FLOAT DOUBLE
+"vth0_wca_nmos" FLOAT DOUBLE
+"k1_wca_nmos" FLOAT DOUBLE
+"dvt1w_wca_nmos" FLOAT DOUBLE
+"u0_wcr_nmos" FLOAT DOUBLE
+"agidl_wcr_nmos" FLOAT DOUBLE
+"cgdo_wcr_nmos" FLOAT DOUBLE
+"dlc_wca_nmos" FLOAT DOUBLE
+"dwc_wca_nmos" FLOAT DOUBLE
+"cjs_wcr_nmos" FLOAT DOUBLE
+"xl_wca_nmos" FLOAT DOUBLE
+"xw_wca_nmos" FLOAT DOUBLE
+"pu0_wca_nmos" FLOAT DOUBLE
+"pvsat_wca_nmos" FLOAT DOUBLE
+"lnfactor_wca_nmos" FLOAT DOUBLE
+"tox_wcr_pmos" FLOAT DOUBLE
+"ndep_wcr_pmos" FLOAT DOUBLE
+"vth0_wca_pmos" FLOAT DOUBLE
+"k1_wca_pmos" FLOAT DOUBLE
+"dvt1w_wca_pmos" FLOAT DOUBLE
+"u0_wcr_pmos" FLOAT DOUBLE
+"agidl_wcr_pmos" FLOAT DOUBLE
+"cgdo_wcr_pmos" FLOAT DOUBLE
+"dlc_wca_pmos" FLOAT DOUBLE
+"dwc_wca_pmos" FLOAT DOUBLE
+"cjs_wcr_pmos" FLOAT DOUBLE
+"xl_wca_pmos" FLOAT DOUBLE
+"xw_wca_pmos" FLOAT DOUBLE
+"pu0_wca_pmos" FLOAT DOUBLE
+"pvsat_wca_pmos" FLOAT DOUBLE
+"lnfactor_wca_pmos" FLOAT DOUBLE
+"tox1v_mcpr_std" FLOAT DOUBLE
+"tox1v_misr_std" FLOAT DOUBLE
+"tox1v_mcpr_tol" FLOAT DOUBLE
+"tox1v_misr_tol" FLOAT DOUBLE
+"vfb1v_mcpa_std" FLOAT DOUBLE
+"vfb1v_misa_std" FLOAT DOUBLE
+"vfb1v_mcpa_tol" FLOAT DOUBLE
+"vfb1v_misa_tol" FLOAT DOUBLE
+"neff1v_mcpr_std" FLOAT DOUBLE
+"neff1v_misr_std" FLOAT DOUBLE
+"neff1v_mcpr_tol" FLOAT DOUBLE
+"neff1v_misr_tol" FLOAT DOUBLE
+"betn1v_mcpr_std" FLOAT DOUBLE
+"betn1v_misr_std" FLOAT DOUBLE
+"betn1v_mcpr_tol" FLOAT DOUBLE
+"betn1v_misr_tol" FLOAT DOUBLE
+"lvar1v_mcpa_std" FLOAT DOUBLE
+"lvar1v_misa_std" FLOAT DOUBLE
+"lvar1v_mcpa_tol" FLOAT DOUBLE
+"lvar1v_misa_tol" FLOAT DOUBLE
+"wvar1v_mcpa_std" FLOAT DOUBLE
+"wvar1v_misa_std" FLOAT DOUBLE
+"wvar1v_mcpa_tol" FLOAT DOUBLE
+"wvar1v_misa_tol" FLOAT DOUBLE
+"tox_wcr_nmos1vbc" FLOAT DOUBLE
+"neffo_wcr_nmos1vbc" FLOAT DOUBLE
+"neffl_wcr_nmos1vbc" FLOAT DOUBLE
+"neffw_wcr_nmos1vbc" FLOAT DOUBLE
+"vfbo_wca_nmos1vbc" FLOAT DOUBLE
+"vfbl_wca_nmos1vbc" FLOAT DOUBLE
+"vfbw_wca_nmos1vbc" FLOAT DOUBLE
+"vfblw_wca_nmos1vbc" FLOAT DOUBLE
+"cfl_wca_nmos1vbc" FLOAT DOUBLE
+"cfw_wca_nmos1vbc" FLOAT DOUBLE
+"thesatl_wcr_nmos1vbc" FLOAT DOUBLE
+"betno_wcr_nmos1vbc" FLOAT DOUBLE
+"betnl_wcr_nmos1vbc" FLOAT DOUBLE
+"betnw_wcr_nmos1vbc" FLOAT DOUBLE
+"lvar_wca_nmos1vbc" FLOAT DOUBLE
+"wvar_wca_nmos1vbc" FLOAT DOUBLE
+"cjorbot_wcr_nmos1vbc" FLOAT DOUBLE
+"rsw1_wcr_nmos1vbc" FLOAT DOUBLE
+"tox_nmos1vbc_mcpr_std" FLOAT DOUBLE
+"tox_nmos1vbc_mcpr_tol" FLOAT DOUBLE
+"tox_nmos1vbc_misr_std" FLOAT DOUBLE
+"tox_nmos1vbc_misr_tol" FLOAT DOUBLE
+"vfbo_nmos1vbc_mcpa_std" FLOAT DOUBLE
+"vfbo_nmos1vbc_mcpa_tol" FLOAT DOUBLE
+"vfbo_nmos1vbc_misa_std" FLOAT DOUBLE
+"vfbo_nmos1vbc_misa_tol" FLOAT DOUBLE
+"vfbl_nmos1vbc_mcpa_std" FLOAT DOUBLE
+"vfbl_nmos1vbc_mcpa_tol" FLOAT DOUBLE
+"vfbw_nmos1vbc_mcpa_std" FLOAT DOUBLE
+"vfbw_nmos1vbc_mcpa_tol" FLOAT DOUBLE
+"vfblw_nmos1vbc_mcpa_std" FLOAT DOUBLE
+"vfblw_nmos1vbc_mcpa_tol" FLOAT DOUBLE
+"neffo_nmos1vbc_mcpr_std" FLOAT DOUBLE
+"neffo_nmos1vbc_mcpr_tol" FLOAT DOUBLE
+"neffo_nmos1vbc_misr_std" FLOAT DOUBLE
+"neffo_nmos1vbc_misr_tol" FLOAT DOUBLE
+"neffl_nmos1vbc_mcpr_std" FLOAT DOUBLE
+"neffl_nmos1vbc_mcpr_tol" FLOAT DOUBLE
+"neffw_nmos1vbc_mcpr_std" FLOAT DOUBLE
+"neffw_nmos1vbc_mcpr_tol" FLOAT DOUBLE
+"cfl_nmos1vbc_mcpa_std" FLOAT DOUBLE
+"cfl_nmos1vbc_mcpa_tol" FLOAT DOUBLE
+"cfw_nmos1vbc_mcpa_std" FLOAT DOUBLE
+"cfw_nmos1vbc_mcpa_tol" FLOAT DOUBLE
+"thesatl_nmos1vbc_mcpr_std" FLOAT DOUBLE
+"thesatl_nmos1vbc_mcpr_tol" FLOAT DOUBLE
+"rsw1_nmos1vbc_mcpr_std" FLOAT DOUBLE
+"rsw1_nmos1vbc_mcpr_tol" FLOAT DOUBLE
+"betno_nmos1vbc_mcpr_std" FLOAT DOUBLE
+"betno_nmos1vbc_mcpr_tol" FLOAT DOUBLE
+"betno_nmos1vbc_misr_std" FLOAT DOUBLE
+"betno_nmos1vbc_misr_tol" FLOAT DOUBLE
+"betnl_nmos1vbc_mcpr_std" FLOAT DOUBLE
+"betnl_nmos1vbc_mcpr_tol" FLOAT DOUBLE
+"betnw_nmos1vbc_mcpr_std" FLOAT DOUBLE
+"betnw_nmos1vbc_mcpr_tol" FLOAT DOUBLE
+"lvar_nmos1vbc_mcpa_std" FLOAT DOUBLE
+"lvar_nmos1vbc_misa_std" FLOAT DOUBLE
+"lvar_nmos1vbc_mcpa_tol" FLOAT DOUBLE
+"lvar_nmos1vbc_misa_tol" FLOAT DOUBLE
+"wvar_nmos1vbc_mcpa_std" FLOAT DOUBLE
+"wvar_nmos1vbc_misa_std" FLOAT DOUBLE
+"wvar_nmos1vbc_mcpa_tol" FLOAT DOUBLE
+"wvar_nmos1vbc_misa_tol" FLOAT DOUBLE
+"nmos1vbc_avt_wl" FLOAT DOUBLE
+"nmos1vbc_avt_w" FLOAT DOUBLE
+"nmos1vbc_avt_l" FLOAT DOUBLE
+"nmos1vbc_auo_wl" FLOAT DOUBLE
+"nmos1vbc_auo_w" FLOAT DOUBLE
+"nmos1vbc_auo_l" FLOAT DOUBLE
+"nmos1vbc_bvt" FLOAT DOUBLE
+"nmos1vbc_buo" FLOAT DOUBLE
+"tox_wcr_pmos1vbc" FLOAT DOUBLE
+"neffo_wcr_pmos1vbc" FLOAT DOUBLE
+"neffl_wcr_pmos1vbc" FLOAT DOUBLE
+"neffw_wcr_pmos1vbc" FLOAT DOUBLE
+"vfbo_wca_pmos1vbc" FLOAT DOUBLE
+"vfbl_wca_pmos1vbc" FLOAT DOUBLE
+"vfbw_wca_pmos1vbc" FLOAT DOUBLE
+"betno_wcr_pmos1vbc" FLOAT DOUBLE
+"betnl_wcr_pmos1vbc" FLOAT DOUBLE
+"betnw_wcr_pmos1vbc" FLOAT DOUBLE
+"lvar_wca_pmos1vbc" FLOAT DOUBLE
+"wvar_wca_pmos1vbc" FLOAT DOUBLE
+"cflo_wcr_pmos1vbc" FLOAT DOUBLE
+"cfw_wcr_pmos1vbc" FLOAT DOUBLE
+"thesato_wcr_pmos1vbc" FLOAT DOUBLE
+"thesatw_wcr_pmos1vbc" FLOAT DOUBLE
+"cjorbot_wcr_pmos1vbc" FLOAT DOUBLE
+"bgidl_wcr_pmos1vbc" FLOAT DOUBLE
+"tox_pmos1vbc_mcpr_std" FLOAT DOUBLE
+"tox_pmos1vbc_mcpr_tol" FLOAT DOUBLE
+"tox_pmos1vbc_misr_std" FLOAT DOUBLE
+"tox_pmos1vbc_misr_tol" FLOAT DOUBLE
+"vfbo_pmos1vbc_mcpa_std" FLOAT DOUBLE
+"vfbo_pmos1vbc_mcpa_tol" FLOAT DOUBLE
+"vfbo_pmos1vbc_misa_std" FLOAT DOUBLE
+"vfbo_pmos1vbc_misa_tol" FLOAT DOUBLE
+"vfbl_pmos1vbc_mcpa_std" FLOAT DOUBLE
+"vfbl_pmos1vbc_mcpa_tol" FLOAT DOUBLE
+"vfbw_pmos1vbc_mcpa_std" FLOAT DOUBLE
+"vfbw_pmos1vbc_mcpa_tol" FLOAT DOUBLE
+"neffo_pmos1vbc_mcpr_std" FLOAT DOUBLE
+"neffo_pmos1vbc_mcpr_tol" FLOAT DOUBLE
+"neffo_pmos1vbc_misr_std" FLOAT DOUBLE
+"neffo_pmos1vbc_misr_tol" FLOAT DOUBLE
+"neffl_pmos1vbc_mcpr_std" FLOAT DOUBLE
+"neffl_pmos1vbc_mcpr_tol" FLOAT DOUBLE
+"neffw_pmos1vbc_mcpr_std" FLOAT DOUBLE
+"neffw_pmos1vbc_mcpr_tol" FLOAT DOUBLE
+"betno_pmos1vbc_mcpr_std" FLOAT DOUBLE
+"betno_pmos1vbc_mcpr_tol" FLOAT DOUBLE
+"betno_pmos1vbc_misr_std" FLOAT DOUBLE
+"betno_pmos1vbc_misr_tol" FLOAT DOUBLE
+"betnl_pmos1vbc_mcpr_std" FLOAT DOUBLE
+"betnl_pmos1vbc_mcpr_tol" FLOAT DOUBLE
+"betnw_pmos1vbc_mcpr_std" FLOAT DOUBLE
+"betnw_pmos1vbc_mcpr_tol" FLOAT DOUBLE
+"lvar_pmos1vbc_mcpa_std" FLOAT DOUBLE
+"lvar_pmos1vbc_misa_std" FLOAT DOUBLE
+"lvar_pmos1vbc_mcpa_tol" FLOAT DOUBLE
+"lvar_pmos1vbc_misa_tol" FLOAT DOUBLE
+"wvar_pmos1vbc_mcpa_std" FLOAT DOUBLE
+"wvar_pmos1vbc_misa_std" FLOAT DOUBLE
+"wvar_pmos1vbc_mcpa_tol" FLOAT DOUBLE
+"wvar_pmos1vbc_misa_tol" FLOAT DOUBLE
+"cfw_pmos1vbc_mcpr_std" FLOAT DOUBLE
+"cfw_pmos1vbc_mcpr_tol" FLOAT DOUBLE
+"cflo_pmos1vbc_mcpr_std" FLOAT DOUBLE
+"cflo_pmos1vbc_mcpr_tol" FLOAT DOUBLE
+"thesato_pmos1vbc_mcpr_std" FLOAT DOUBLE
+"thesato_pmos1vbc_mcpr_tol" FLOAT DOUBLE
+"thesatw_pmos1vbc_mcpr_std" FLOAT DOUBLE
+"thesatw_pmos1vbc_mcpr_tol" FLOAT DOUBLE
+"pmos1vbc_avt_wl" FLOAT DOUBLE
+"pmos1vbc_avt_w" FLOAT DOUBLE
+"pmos1vbc_avt_l" FLOAT DOUBLE
+"pmos1vbc_auo_wl" FLOAT DOUBLE
+"pmos1vbc_auo_w" FLOAT DOUBLE
+"pmos1vbc_auo_l" FLOAT DOUBLE
+"pmos1vbc_bvt" FLOAT DOUBLE
+"pmos1vbc_buo" FLOAT DOUBLE
+"tox_wcr_nmos1vbf" FLOAT DOUBLE
+"neffo_wcr_nmos1vbf" FLOAT DOUBLE
+"neffl_wcr_nmos1vbf" FLOAT DOUBLE
+"neffw_wcr_nmos1vbf" FLOAT DOUBLE
+"vfbo_wca_nmos1vbf" FLOAT DOUBLE
+"vfbl_wca_nmos1vbf" FLOAT DOUBLE
+"vfbw_wca_nmos1vbf" FLOAT DOUBLE
+"vfblw_wca_nmos1vbf" FLOAT DOUBLE
+"vfbl_wca_nmos1vbf_ln" FLOAT DOUBLE
+"cfl_wca_nmos1vbf" FLOAT DOUBLE
+"cfw_wca_nmos1vbf" FLOAT DOUBLE
+"thesato_wcr_nmos1vbf" FLOAT DOUBLE
+"thesatl_wcr_nmos1vbf" FLOAT DOUBLE
+"thesatw_wcr_nmos1vbf" FLOAT DOUBLE
+"thesatl_wcr_nmos1vbf_ln" FLOAT DOUBLE
+"betno_wcr_nmos1vbf" FLOAT DOUBLE
+"betnl_wcr_nmos1vbf" FLOAT DOUBLE
+"betnw_wcr_nmos1vbf" FLOAT DOUBLE
+"betnl_wcr_nmos1vbf_ln" FLOAT DOUBLE
+"lvar_wca_nmos1vbf" FLOAT DOUBLE
+"wvar_wca_nmos1vbf" FLOAT DOUBLE
+"cjorbot_wcr_nmos1vbf" FLOAT DOUBLE
+"rsw1_wcr_nmos1vbf" FLOAT DOUBLE
+"tox_nmos1vbf_mcpr_std" FLOAT DOUBLE
+"tox_nmos1vbf_mcpr_tol" FLOAT DOUBLE
+"tox_nmos1vbf_misr_std" FLOAT DOUBLE
+"tox_nmos1vbf_misr_tol" FLOAT DOUBLE
+"vfbo_nmos1vbf_mcpa_std" FLOAT DOUBLE
+"vfbo_nmos1vbf_mcpa_tol" FLOAT DOUBLE
+"vfbo_nmos1vbf_misa_std" FLOAT DOUBLE
+"vfbo_nmos1vbf_misa_tol" FLOAT DOUBLE
+"vfbl_nmos1vbf_mcpa_std" FLOAT DOUBLE
+"vfbl_nmos1vbf_mcpa_tol" FLOAT DOUBLE
+"vfbw_nmos1vbf_mcpa_std" FLOAT DOUBLE
+"vfbw_nmos1vbf_mcpa_tol" FLOAT DOUBLE
+"vfblw_nmos1vbf_mcpa_std" FLOAT DOUBLE
+"vfblw_nmos1vbf_mcpa_tol" FLOAT DOUBLE
+"neffo_nmos1vbf_mcpr_std" FLOAT DOUBLE
+"neffo_nmos1vbf_mcpr_tol" FLOAT DOUBLE
+"neffo_nmos1vbf_misr_std" FLOAT DOUBLE
+"neffo_nmos1vbf_misr_tol" FLOAT DOUBLE
+"neffl_nmos1vbf_mcpr_std" FLOAT DOUBLE
+"neffl_nmos1vbf_mcpr_tol" FLOAT DOUBLE
+"neffw_nmos1vbf_mcpr_std" FLOAT DOUBLE
+"neffw_nmos1vbf_mcpr_tol" FLOAT DOUBLE
+"cfl_nmos1vbf_mcpa_std" FLOAT DOUBLE
+"cfl_nmos1vbf_mcpa_tol" FLOAT DOUBLE
+"cfw_nmos1vbf_mcpa_std" FLOAT DOUBLE
+"cfw_nmos1vbf_mcpa_tol" FLOAT DOUBLE
+"thesato_nmos1vbf_mcpr_std" FLOAT DOUBLE
+"thesato_nmos1vbf_mcpr_tol" FLOAT DOUBLE
+"thesatl_nmos1vbf_mcpr_std" FLOAT DOUBLE
+"thesatl_nmos1vbf_mcpr_tol" FLOAT DOUBLE
+"thesatw_nmos1vbf_mcpr_std" FLOAT DOUBLE
+"thesatw_nmos1vbf_mcpr_tol" FLOAT DOUBLE
+"rsw1_nmos1vbf_mcpr_std" FLOAT DOUBLE
+"rsw1_nmos1vbf_mcpr_tol" FLOAT DOUBLE
+"betno_nmos1vbf_mcpr_std" FLOAT DOUBLE
+"betno_nmos1vbf_mcpr_tol" FLOAT DOUBLE
+"betno_nmos1vbf_misr_std" FLOAT DOUBLE
+"betno_nmos1vbf_misr_tol" FLOAT DOUBLE
+"betnl_nmos1vbf_mcpr_std" FLOAT DOUBLE
+"betnl_nmos1vbf_mcpr_tol" FLOAT DOUBLE
+"betnw_nmos1vbf_mcpr_std" FLOAT DOUBLE
+"betnw_nmos1vbf_mcpr_tol" FLOAT DOUBLE
+"lvar_nmos1vbf_mcpa_std" FLOAT DOUBLE
+"lvar_nmos1vbf_misa_std" FLOAT DOUBLE
+"lvar_nmos1vbf_mcpa_tol" FLOAT DOUBLE
+"lvar_nmos1vbf_misa_tol" FLOAT DOUBLE
+"wvar_nmos1vbf_mcpa_std" FLOAT DOUBLE
+"wvar_nmos1vbf_misa_std" FLOAT DOUBLE
+"wvar_nmos1vbf_mcpa_tol" FLOAT DOUBLE
+"wvar_nmos1vbf_misa_tol" FLOAT DOUBLE
+"nmos1vbf_avt_wl" FLOAT DOUBLE
+"nmos1vbf_avt_w" FLOAT DOUBLE
+"nmos1vbf_avt_l" FLOAT DOUBLE
+"nmos1vbf_auo_wl" FLOAT DOUBLE
+"nmos1vbf_auo_w" FLOAT DOUBLE
+"nmos1vbf_auo_l" FLOAT DOUBLE
+"nmos1vbf_bvt" FLOAT DOUBLE
+"nmos1vbf_buo" FLOAT DOUBLE
+"tox_wcr_pmos1vbf" FLOAT DOUBLE
+"neffo_wcr_pmos1vbf" FLOAT DOUBLE
+"neffl_wcr_pmos1vbf" FLOAT DOUBLE
+"neffw_wcr_pmos1vbf" FLOAT DOUBLE
+"vfbo_wca_pmos1vbf" FLOAT DOUBLE
+"vfbl_wca_pmos1vbf" FLOAT DOUBLE
+"vfbw_wca_pmos1vbf" FLOAT DOUBLE
+"vfblw_wca_pmos1vbf" FLOAT DOUBLE
+"cfl_wca_pmos1vbf" FLOAT DOUBLE
+"cfw_wca_pmos1vbf" FLOAT DOUBLE
+"thesato_wcr_pmos1vbf" FLOAT DOUBLE
+"thesatl_wcr_pmos1vbf" FLOAT DOUBLE
+"thesatw_wcr_pmos1vbf" FLOAT DOUBLE
+"betno_wcr_pmos1vbf" FLOAT DOUBLE
+"betnl_wcr_pmos1vbf" FLOAT DOUBLE
+"betnw_wcr_pmos1vbf" FLOAT DOUBLE
+"lvar_wca_pmos1vbf" FLOAT DOUBLE
+"wvar_wca_pmos1vbf" FLOAT DOUBLE
+"cjorbot_wcr_pmos1vbf" FLOAT DOUBLE
+"rsw1_wcr_pmos1vbf" FLOAT DOUBLE
+"tox_pmos1vbf_mcpr_std" FLOAT DOUBLE
+"tox_pmos1vbf_mcpr_tol" FLOAT DOUBLE
+"tox_pmos1vbf_misr_std" FLOAT DOUBLE
+"tox_pmos1vbf_misr_tol" FLOAT DOUBLE
+"vfbo_pmos1vbf_mcpa_std" FLOAT DOUBLE
+"vfbo_pmos1vbf_mcpa_tol" FLOAT DOUBLE
+"vfbo_pmos1vbf_misa_std" FLOAT DOUBLE
+"vfbo_pmos1vbf_misa_tol" FLOAT DOUBLE
+"vfbl_pmos1vbf_mcpa_std" FLOAT DOUBLE
+"vfbl_pmos1vbf_mcpa_tol" FLOAT DOUBLE
+"vfbw_pmos1vbf_mcpa_std" FLOAT DOUBLE
+"vfbw_pmos1vbf_mcpa_tol" FLOAT DOUBLE
+"vfblw_pmos1vbf_mcpa_std" FLOAT DOUBLE
+"vfblw_pmos1vbf_mcpa_tol" FLOAT DOUBLE
+"neffo_pmos1vbf_mcpr_std" FLOAT DOUBLE
+"neffo_pmos1vbf_mcpr_tol" FLOAT DOUBLE
+"neffo_pmos1vbf_misr_std" FLOAT DOUBLE
+"neffo_pmos1vbf_misr_tol" FLOAT DOUBLE
+"neffl_pmos1vbf_mcpr_std" FLOAT DOUBLE
+"neffl_pmos1vbf_mcpr_tol" FLOAT DOUBLE
+"neffw_pmos1vbf_mcpr_std" FLOAT DOUBLE
+"neffw_pmos1vbf_mcpr_tol" FLOAT DOUBLE
+"cfl_pmos1vbf_mcpa_std" FLOAT DOUBLE
+"cfl_pmos1vbf_mcpa_tol" FLOAT DOUBLE
+"cfw_pmos1vbf_mcpa_std" FLOAT DOUBLE
+"cfw_pmos1vbf_mcpa_tol" FLOAT DOUBLE
+"thesato_pmos1vbf_mcpr_std" FLOAT DOUBLE
+"thesato_pmos1vbf_mcpr_tol" FLOAT DOUBLE
+"thesatl_pmos1vbf_mcpr_std" FLOAT DOUBLE
+"thesatl_pmos1vbf_mcpr_tol" FLOAT DOUBLE
+"thesatw_pmos1vbf_mcpr_std" FLOAT DOUBLE
+"thesatw_pmos1vbf_mcpr_tol" FLOAT DOUBLE
+"rsw1_pmos1vbf_mcpr_std" FLOAT DOUBLE
+"rsw1_pmos1vbf_mcpr_tol" FLOAT DOUBLE
+"betno_pmos1vbf_mcpr_std" FLOAT DOUBLE
+"betno_pmos1vbf_mcpr_tol" FLOAT DOUBLE
+"betno_pmos1vbf_misr_std" FLOAT DOUBLE
+"betno_pmos1vbf_misr_tol" FLOAT DOUBLE
+"betnl_pmos1vbf_mcpr_std" FLOAT DOUBLE
+"betnl_pmos1vbf_mcpr_tol" FLOAT DOUBLE
+"betnw_pmos1vbf_mcpr_std" FLOAT DOUBLE
+"betnw_pmos1vbf_mcpr_tol" FLOAT DOUBLE
+"lvar_pmos1vbf_mcpa_std" FLOAT DOUBLE
+"lvar_pmos1vbf_misa_std" FLOAT DOUBLE
+"lvar_pmos1vbf_mcpa_tol" FLOAT DOUBLE
+"lvar_pmos1vbf_misa_tol" FLOAT DOUBLE
+"wvar_pmos1vbf_mcpa_std" FLOAT DOUBLE
+"wvar_pmos1vbf_misa_std" FLOAT DOUBLE
+"wvar_pmos1vbf_mcpa_tol" FLOAT DOUBLE
+"wvar_pmos1vbf_misa_tol" FLOAT DOUBLE
+"tox_wcr_pmos1vht" FLOAT DOUBLE
+"neffo_wcr_pmos1vht" FLOAT DOUBLE
+"neffl_wcr_pmos1vht" FLOAT DOUBLE
+"neffw_wcr_pmos1vht" FLOAT DOUBLE
+"vfbo_wca_pmos1vht" FLOAT DOUBLE
+"vfbl_wca_pmos1vht" FLOAT DOUBLE
+"vfbw_wca_pmos1vht" FLOAT DOUBLE
+"betno_wcr_pmos1vht" FLOAT DOUBLE
+"betnl_wcr_pmos1vht" FLOAT DOUBLE
+"betnw_wcr_pmos1vht" FLOAT DOUBLE
+"lvar_wca_pmos1vht" FLOAT DOUBLE
+"wvar_wca_pmos1vht" FLOAT DOUBLE
+"cflo_wcr_pmos1vht" FLOAT DOUBLE
+"cfw_wcr_pmos1vht" FLOAT DOUBLE
+"thesato_wcr_pmos1vht" FLOAT DOUBLE
+"thesatw_wcr_pmos1vht" FLOAT DOUBLE
+"cjorbot_wcr_pmos1vht" FLOAT DOUBLE
+"bgidl_wcr_pmos1vht" FLOAT DOUBLE
+"tox_pmos1vht_mcpr_std" FLOAT DOUBLE
+"tox_pmos1vht_mcpr_tol" FLOAT DOUBLE
+"vfbo_pmos1vht_mcpa_std" FLOAT DOUBLE
+"vfbo_pmos1vht_mcpa_tol" FLOAT DOUBLE
+"vfbl_pmos1vht_mcpa_std" FLOAT DOUBLE
+"vfbl_pmos1vht_mcpa_tol" FLOAT DOUBLE
+"vfbw_pmos1vht_mcpa_std" FLOAT DOUBLE
+"vfbw_pmos1vht_mcpa_tol" FLOAT DOUBLE
+"neffo_pmos1vht_mcpr_std" FLOAT DOUBLE
+"neffo_pmos1vht_mcpr_tol" FLOAT DOUBLE
+"neffl_pmos1vht_mcpr_std" FLOAT DOUBLE
+"neffl_pmos1vht_mcpr_tol" FLOAT DOUBLE
+"neffw_pmos1vht_mcpr_std" FLOAT DOUBLE
+"neffw_pmos1vht_mcpr_tol" FLOAT DOUBLE
+"betno_pmos1vht_mcpr_std" FLOAT DOUBLE
+"betno_pmos1vht_mcpr_tol" FLOAT DOUBLE
+"betnl_pmos1vht_mcpr_std" FLOAT DOUBLE
+"betnl_pmos1vht_mcpr_tol" FLOAT DOUBLE
+"betnw_pmos1vht_mcpr_std" FLOAT DOUBLE
+"betnw_pmos1vht_mcpr_tol" FLOAT DOUBLE
+"lvar_pmos1vht_mcpa_std" FLOAT DOUBLE
+"lvar_pmos1vht_mcpa_tol" FLOAT DOUBLE
+"wvar_pmos1vht_mcpa_std" FLOAT DOUBLE
+"wvar_pmos1vht_mcpa_tol" FLOAT DOUBLE
+"cfw_pmos1vht_mcpr_std" FLOAT DOUBLE
+"cfw_pmos1vht_mcpr_tol" FLOAT DOUBLE
+"cflo_pmos1vht_mcpr_std" FLOAT DOUBLE
+"cflo_pmos1vht_mcpr_tol" FLOAT DOUBLE
+"thesato_pmos1vht_mcpr_std" FLOAT DOUBLE
+"thesato_pmos1vht_mcpr_tol" FLOAT DOUBLE
+"thesatw_pmos1vht_mcpr_std" FLOAT DOUBLE
+"thesatw_pmos1vht_mcpr_tol" FLOAT DOUBLE
+"pmos1vht_avt_wl" FLOAT DOUBLE
+"pmos1vht_avt_w" FLOAT DOUBLE
+"pmos1vht_avt_l" FLOAT DOUBLE
+"pmos1vht_auo_wl" FLOAT DOUBLE
+"pmos1vht_auo_w" FLOAT DOUBLE
+"pmos1vht_auo_l" FLOAT DOUBLE
+"pmos1vht_bvt" FLOAT DOUBLE
+"pmos1vht_buo" FLOAT DOUBLE
+"tox_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"neffo_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"neffl_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"neffw_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"vfbo_wca_nmos1vbf_hvt" FLOAT DOUBLE
+"vfbl_wca_nmos1vbf_hvt" FLOAT DOUBLE
+"vfbw_wca_nmos1vbf_hvt" FLOAT DOUBLE
+"vfblw_wca_nmos1vbf_hvt" FLOAT DOUBLE
+"cfl_wca_nmos1vbf_hvt" FLOAT DOUBLE
+"cfw_wca_nmos1vbf_hvt" FLOAT DOUBLE
+"thesato_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"thesatl_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"thesatw_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"betno_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"betnl_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"betnw_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"lvar_wca_nmos1vbf_hvt" FLOAT DOUBLE
+"wvar_wca_nmos1vbf_hvt" FLOAT DOUBLE
+"cjorbot_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"rsw1_wcr_nmos1vbf_hvt" FLOAT DOUBLE
+"tox_nmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"tox_nmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"tox_nmos1vbf_hvt_misr_std" FLOAT DOUBLE
+"tox_nmos1vbf_hvt_misr_tol" FLOAT DOUBLE
+"vfbo_nmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"vfbo_nmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"vfbo_nmos1vbf_hvt_misa_std" FLOAT DOUBLE
+"vfbo_nmos1vbf_hvt_misa_tol" FLOAT DOUBLE
+"vfbl_nmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"vfbl_nmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"vfbw_nmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"vfbw_nmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"vfblw_nmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"vfblw_nmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"neffo_nmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"neffo_nmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"neffo_nmos1vbf_hvt_misr_std" FLOAT DOUBLE
+"neffo_nmos1vbf_hvt_misr_tol" FLOAT DOUBLE
+"neffl_nmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"neffl_nmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"neffw_nmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"neffw_nmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"cfl_nmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"cfl_nmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"cfw_nmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"cfw_nmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"thesato_nmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"thesato_nmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"thesatl_nmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"thesatl_nmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"thesatw_nmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"thesatw_nmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"rsw1_nmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"rsw1_nmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"betno_nmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"betno_nmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"betno_nmos1vbf_hvt_misr_std" FLOAT DOUBLE
+"betno_nmos1vbf_hvt_misr_tol" FLOAT DOUBLE
+"betnl_nmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"betnl_nmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"betnw_nmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"betnw_nmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"lvar_nmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"lvar_nmos1vbf_hvt_misa_std" FLOAT DOUBLE
+"lvar_nmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"lvar_nmos1vbf_hvt_misa_tol" FLOAT DOUBLE
+"wvar_nmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"wvar_nmos1vbf_hvt_misa_std" FLOAT DOUBLE
+"wvar_nmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"wvar_nmos1vbf_hvt_misa_tol" FLOAT DOUBLE
+"nmos1vbf_hvt_avt_wl" FLOAT DOUBLE
+"nmos1vbf_hvt_avt_w" FLOAT DOUBLE
+"nmos1vbf_hvt_avt_l" FLOAT DOUBLE
+"nmos1vbf_hvt_auo_wl" FLOAT DOUBLE
+"nmos1vbf_hvt_auo_w" FLOAT DOUBLE
+"nmos1vbf_hvt_auo_l" FLOAT DOUBLE
+"nmos1vbf_hvt_bvt" FLOAT DOUBLE
+"nmos1vbf_hvt_buo" FLOAT DOUBLE
+"tox_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"neffo_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"neffl_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"neffw_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"vfbo_wca_pmos1vbf_hvt" FLOAT DOUBLE
+"vfbl_wca_pmos1vbf_hvt" FLOAT DOUBLE
+"vfbw_wca_pmos1vbf_hvt" FLOAT DOUBLE
+"vfblw_wca_pmos1vbf_hvt" FLOAT DOUBLE
+"cfl_wca_pmos1vbf_hvt" FLOAT DOUBLE
+"cfw_wca_pmos1vbf_hvt" FLOAT DOUBLE
+"thesato_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"thesatl_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"thesatw_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"betno_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"betnl_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"betnw_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"lvar_wca_pmos1vbf_hvt" FLOAT DOUBLE
+"wvar_wca_pmos1vbf_hvt" FLOAT DOUBLE
+"cjorbot_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"rsw1_wcr_pmos1vbf_hvt" FLOAT DOUBLE
+"tox_pmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"tox_pmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"tox_pmos1vbf_hvt_misr_std" FLOAT DOUBLE
+"tox_pmos1vbf_hvt_misr_tol" FLOAT DOUBLE
+"vfbo_pmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"vfbo_pmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"vfbo_pmos1vbf_hvt_misa_std" FLOAT DOUBLE
+"vfbo_pmos1vbf_hvt_misa_tol" FLOAT DOUBLE
+"vfbl_pmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"vfbl_pmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"vfbw_pmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"vfbw_pmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"vfblw_pmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"vfblw_pmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"neffo_pmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"neffo_pmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"neffo_pmos1vbf_hvt_misr_std" FLOAT DOUBLE
+"neffo_pmos1vbf_hvt_misr_tol" FLOAT DOUBLE
+"neffl_pmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"neffl_pmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"neffw_pmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"neffw_pmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"cfl_pmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"cfl_pmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"cfw_pmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"cfw_pmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"thesato_pmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"thesato_pmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"thesatl_pmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"thesatl_pmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"thesatw_pmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"thesatw_pmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"rsw1_pmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"rsw1_pmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"betno_pmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"betno_pmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"betno_pmos1vbf_hvt_misr_std" FLOAT DOUBLE
+"betno_pmos1vbf_hvt_misr_tol" FLOAT DOUBLE
+"betnl_pmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"betnl_pmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"betnw_pmos1vbf_hvt_mcpr_std" FLOAT DOUBLE
+"betnw_pmos1vbf_hvt_mcpr_tol" FLOAT DOUBLE
+"lvar_pmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"lvar_pmos1vbf_hvt_misa_std" FLOAT DOUBLE
+"lvar_pmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"lvar_pmos1vbf_hvt_misa_tol" FLOAT DOUBLE
+"wvar_pmos1vbf_hvt_mcpa_std" FLOAT DOUBLE
+"wvar_pmos1vbf_hvt_misa_std" FLOAT DOUBLE
+"wvar_pmos1vbf_hvt_mcpa_tol" FLOAT DOUBLE
+"wvar_pmos1vbf_hvt_misa_tol" FLOAT DOUBLE
+"pmos1vbf_hvt_avt_wl" FLOAT DOUBLE
+"pmos1vbf_hvt_avt_w" FLOAT DOUBLE
+"pmos1vbf_hvt_avt_l" FLOAT DOUBLE
+"pmos1vbf_hvt_auo_wl" FLOAT DOUBLE
+"pmos1vbf_hvt_auo_w" FLOAT DOUBLE
+"pmos1vbf_hvt_auo_l" FLOAT DOUBLE
+"pmos1vbf_hvt_bvt" FLOAT DOUBLE
+"pmos1vbf_hvt_buo" FLOAT DOUBLE
+"tox_wcr_nmos2vbc" FLOAT DOUBLE
+"neffo_wcr_nmos2vbc" FLOAT DOUBLE
+"neffl_wcr_nmos2vbc" FLOAT DOUBLE
+"neffw_wcr_nmos2vbc" FLOAT DOUBLE
+"vfbo_wca_nmos2vbc" FLOAT DOUBLE
+"vfbl_wca_nmos2vbc" FLOAT DOUBLE
+"vfbw_wca_nmos2vbc" FLOAT DOUBLE
+"vfblw_wca_nmos2vbc" FLOAT DOUBLE
+"cfl_wca_nmos2vbc" FLOAT DOUBLE
+"cfw_wca_nmos2vbc" FLOAT DOUBLE
+"thesatl_wcr_nmos2vbc" FLOAT DOUBLE
+"thesatw_wcr_nmos2vbc" FLOAT DOUBLE
+"betno_wcr_nmos2vbc" FLOAT DOUBLE
+"betnl_wcr_nmos2vbc" FLOAT DOUBLE
+"betnw_wcr_nmos2vbc" FLOAT DOUBLE
+"lvar_wca_nmos2vbc" FLOAT DOUBLE
+"wvar_wca_nmos2vbc" FLOAT DOUBLE
+"cjorbot_wcr_nmos2vbc" FLOAT DOUBLE
+"rsw1_wcr_nmos2vbc" FLOAT DOUBLE
+"tox_nmos2vbc_mcpr_std" FLOAT DOUBLE
+"tox_nmos2vbc_mcpr_tol" FLOAT DOUBLE
+"tox_nmos2vbc_misr_std" FLOAT DOUBLE
+"tox_nmos2vbc_misr_tol" FLOAT DOUBLE
+"vfbo_nmos2vbc_mcpa_std" FLOAT DOUBLE
+"vfbo_nmos2vbc_mcpa_tol" FLOAT DOUBLE
+"vfbo_nmos2vbc_misa_std" FLOAT DOUBLE
+"vfbo_nmos2vbc_misa_tol" FLOAT DOUBLE
+"vfbl_nmos2vbc_mcpa_std" FLOAT DOUBLE
+"vfbl_nmos2vbc_mcpa_tol" FLOAT DOUBLE
+"vfbl_nmos2vbc_misa_std" FLOAT DOUBLE
+"vfbl_nmos2vbc_misa_tol" FLOAT DOUBLE
+"vfbw_nmos2vbc_mcpa_std" FLOAT DOUBLE
+"vfbw_nmos2vbc_mcpa_tol" FLOAT DOUBLE
+"vfbw_nmos2vbc_misa_std" FLOAT DOUBLE
+"vfbw_nmos2vbc_misa_tol" FLOAT DOUBLE
+"vfblw_nmos2vbc_mcpa_std" FLOAT DOUBLE
+"vfblw_nmos2vbc_mcpa_tol" FLOAT DOUBLE
+"vfblw_nmos2vbc_misa_std" FLOAT DOUBLE
+"vfblw_nmos2vbc_misa_tol" FLOAT DOUBLE
+"neffo_nmos2vbc_mcpr_std" FLOAT DOUBLE
+"neffo_nmos2vbc_mcpr_tol" FLOAT DOUBLE
+"neffo_nmos2vbc_misr_std" FLOAT DOUBLE
+"neffo_nmos2vbc_misr_tol" FLOAT DOUBLE
+"neffl_nmos2vbc_mcpr_std" FLOAT DOUBLE
+"neffl_nmos2vbc_mcpr_tol" FLOAT DOUBLE
+"neffw_nmos2vbc_mcpr_std" FLOAT DOUBLE
+"neffw_nmos2vbc_mcpr_tol" FLOAT DOUBLE
+"neffl_nmos2vbc_misr_std" FLOAT DOUBLE
+"neffl_nmos2vbc_misr_tol" FLOAT DOUBLE
+"neffw_nmos2vbc_misr_std" FLOAT DOUBLE
+"neffw_nmos2vbc_misr_tol" FLOAT DOUBLE
+"cfl_nmos2vbc_mcpa_std" FLOAT DOUBLE
+"cfl_nmos2vbc_mcpa_tol" FLOAT DOUBLE
+"cfw_nmos2vbc_mcpa_std" FLOAT DOUBLE
+"cfw_nmos2vbc_mcpa_tol" FLOAT DOUBLE
+"cfl_nmos2vbc_misa_std" FLOAT DOUBLE
+"cfl_nmos2vbc_misa_tol" FLOAT DOUBLE
+"cfw_nmos2vbc_misa_std" FLOAT DOUBLE
+"cfw_nmos2vbc_misa_tol" FLOAT DOUBLE
+"thesatl_nmos2vbc_mcpr_std" FLOAT DOUBLE
+"thesatl_nmos2vbc_mcpr_tol" FLOAT DOUBLE
+"thesatl_nmos2vbc_misr_std" FLOAT DOUBLE
+"thesatl_nmos2vbc_misr_tol" FLOAT DOUBLE
+"thesatw_nmos2vbc_mcpr_std" FLOAT DOUBLE
+"thesatw_nmos2vbc_mcpr_tol" FLOAT DOUBLE
+"thesatw_nmos2vbc_misr_std" FLOAT DOUBLE
+"thesatw_nmos2vbc_misr_tol" FLOAT DOUBLE
+"rsw1_nmos2vbc_mcpr_std" FLOAT DOUBLE
+"rsw1_nmos2vbc_mcpr_tol" FLOAT DOUBLE
+"rsw1_nmos2vbc_misr_std" FLOAT DOUBLE
+"rsw1_nmos2vbc_misr_tol" FLOAT DOUBLE
+"betno_nmos2vbc_mcpr_std" FLOAT DOUBLE
+"betno_nmos2vbc_mcpr_tol" FLOAT DOUBLE
+"betno_nmos2vbc_misr_std" FLOAT DOUBLE
+"betno_nmos2vbc_misr_tol" FLOAT DOUBLE
+"betnl_nmos2vbc_mcpr_std" FLOAT DOUBLE
+"betnl_nmos2vbc_mcpr_tol" FLOAT DOUBLE
+"betnl_nmos2vbc_misr_std" FLOAT DOUBLE
+"betnl_nmos2vbc_misr_tol" FLOAT DOUBLE
+"betnw_nmos2vbc_mcpr_std" FLOAT DOUBLE
+"betnw_nmos2vbc_mcpr_tol" FLOAT DOUBLE
+"betnw_nmos2vbc_misr_std" FLOAT DOUBLE
+"betnw_nmos2vbc_misr_tol" FLOAT DOUBLE
+"lvar_nmos2vbc_mcpa_std" FLOAT DOUBLE
+"lvar_nmos2vbc_misa_std" FLOAT DOUBLE
+"lvar_nmos2vbc_mcpa_tol" FLOAT DOUBLE
+"lvar_nmos2vbc_misa_tol" FLOAT DOUBLE
+"wvar_nmos2vbc_mcpa_std" FLOAT DOUBLE
+"wvar_nmos2vbc_misa_std" FLOAT DOUBLE
+"wvar_nmos2vbc_mcpa_tol" FLOAT DOUBLE
+"wvar_nmos2vbc_misa_tol" FLOAT DOUBLE
+"nmos2vbc_avt_wl" FLOAT DOUBLE
+"nmos2vbc_avt_w" FLOAT DOUBLE
+"nmos2vbc_avt_l" FLOAT DOUBLE
+"nmos2vbc_auo_wl" FLOAT DOUBLE
+"nmos2vbc_auo_w" FLOAT DOUBLE
+"nmos2vbc_auo_l" FLOAT DOUBLE
+"nmos2vbc_bvt" FLOAT DOUBLE
+"nmos2vbc_buo" FLOAT DOUBLE
+"tox_wcr_pmos2vbc" FLOAT DOUBLE
+"neffo_wcr_pmos2vbc" FLOAT DOUBLE
+"neffl_wcr_pmos2vbc" FLOAT DOUBLE
+"neffw_wcr_pmos2vbc" FLOAT DOUBLE
+"vfbo_wca_pmos2vbc" FLOAT DOUBLE
+"vfbl_wca_pmos2vbc" FLOAT DOUBLE
+"vfbw_wca_pmos2vbc" FLOAT DOUBLE
+"vfblw_wca_pmos2vbc" FLOAT DOUBLE
+"betno_wcr_pmos2vbc" FLOAT DOUBLE
+"betnl_wcr_pmos2vbc" FLOAT DOUBLE
+"betnw_wcr_pmos2vbc" FLOAT DOUBLE
+"lvar_wca_pmos2vbc" FLOAT DOUBLE
+"wvar_wca_pmos2vbc" FLOAT DOUBLE
+"cflo_wcr_pmos2vbc" FLOAT DOUBLE
+"cfw_wcr_pmos2vbc" FLOAT DOUBLE
+"cfl_wcr_pmos2vbc" FLOAT DOUBLE
+"thesato_wcr_pmos2vbc" FLOAT DOUBLE
+"thesatw_wcr_pmos2vbc" FLOAT DOUBLE
+"thesatl_wcr_pmos2vbc" FLOAT DOUBLE
+"cjorbot_wcr_pmos2vbc" FLOAT DOUBLE
+"bgidl_wcr_pmos2vbc" FLOAT DOUBLE
+"tox_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"tox_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"tox_pmos2vbc_misr_std" FLOAT DOUBLE
+"tox_pmos2vbc_misr_tol" FLOAT DOUBLE
+"vfbo_pmos2vbc_mcpa_std" FLOAT DOUBLE
+"vfbo_pmos2vbc_mcpa_tol" FLOAT DOUBLE
+"vfbo_pmos2vbc_misa_std" FLOAT DOUBLE
+"vfbo_pmos2vbc_misa_tol" FLOAT DOUBLE
+"vfbl_pmos2vbc_mcpa_std" FLOAT DOUBLE
+"vfbl_pmos2vbc_mcpa_tol" FLOAT DOUBLE
+"vfbl_pmos2vbc_misa_std" FLOAT DOUBLE
+"vfbl_pmos2vbc_misa_tol" FLOAT DOUBLE
+"vfbw_pmos2vbc_mcpa_std" FLOAT DOUBLE
+"vfbw_pmos2vbc_mcpa_tol" FLOAT DOUBLE
+"vfbw_pmos2vbc_misa_std" FLOAT DOUBLE
+"vfbw_pmos2vbc_misa_tol" FLOAT DOUBLE
+"vfblw_pmos2vbc_mcpa_std" FLOAT DOUBLE
+"vfblw_pmos2vbc_mcpa_tol" FLOAT DOUBLE
+"vfblw_pmos2vbc_misa_std" FLOAT DOUBLE
+"vfblw_pmos2vbc_misa_tol" FLOAT DOUBLE
+"neffo_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"neffo_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"neffo_pmos2vbc_misr_std" FLOAT DOUBLE
+"neffo_pmos2vbc_misr_tol" FLOAT DOUBLE
+"neffl_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"neffl_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"neffl_pmos2vbc_misr_std" FLOAT DOUBLE
+"neffl_pmos2vbc_misr_tol" FLOAT DOUBLE
+"neffw_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"neffw_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"neffw_pmos2vbc_misr_std" FLOAT DOUBLE
+"neffw_pmos2vbc_misr_tol" FLOAT DOUBLE
+"betno_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"betno_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"betno_pmos2vbc_misr_std" FLOAT DOUBLE
+"betno_pmos2vbc_misr_tol" FLOAT DOUBLE
+"betnl_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"betnl_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"betnl_pmos2vbc_misr_std" FLOAT DOUBLE
+"betnl_pmos2vbc_misr_tol" FLOAT DOUBLE
+"betnw_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"betnw_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"betnw_pmos2vbc_misr_std" FLOAT DOUBLE
+"betnw_pmos2vbc_misr_tol" FLOAT DOUBLE
+"lvar_pmos2vbc_mcpa_std" FLOAT DOUBLE
+"lvar_pmos2vbc_misa_std" FLOAT DOUBLE
+"lvar_pmos2vbc_mcpa_tol" FLOAT DOUBLE
+"lvar_pmos2vbc_misa_tol" FLOAT DOUBLE
+"wvar_pmos2vbc_mcpa_std" FLOAT DOUBLE
+"wvar_pmos2vbc_misa_std" FLOAT DOUBLE
+"wvar_pmos2vbc_mcpa_tol" FLOAT DOUBLE
+"wvar_pmos2vbc_misa_tol" FLOAT DOUBLE
+"cfw_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"cfw_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"cfw_pmos2vbc_misr_std" FLOAT DOUBLE
+"cfw_pmos2vbc_misr_tol" FLOAT DOUBLE
+"cfl_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"cfl_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"cfl_pmos2vbc_misr_std" FLOAT DOUBLE
+"cfl_pmos2vbc_misr_tol" FLOAT DOUBLE
+"cflo_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"cflo_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"cflo_pmos2vbc_misr_std" FLOAT DOUBLE
+"cflo_pmos2vbc_misr_tol" FLOAT DOUBLE
+"thesato_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"thesato_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"thesato_pmos2vbc_misr_std" FLOAT DOUBLE
+"thesato_pmos2vbc_misr_tol" FLOAT DOUBLE
+"thesatw_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"thesatw_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"thesatw_pmos2vbc_misr_std" FLOAT DOUBLE
+"thesatw_pmos2vbc_misr_tol" FLOAT DOUBLE
+"thesatl_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"thesatl_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"thesatl_pmos2vbc_misr_std" FLOAT DOUBLE
+"thesatl_pmos2vbc_misr_tol" FLOAT DOUBLE
+"rsw1_pmos2vbc_mcpr_std" FLOAT DOUBLE
+"rsw1_pmos2vbc_mcpr_tol" FLOAT DOUBLE
+"rsw1_pmos2vbc_misr_std" FLOAT DOUBLE
+"rsw1_pmos2vbc_misr_tol" FLOAT DOUBLE
+"pmos2vbc_avt" FLOAT DOUBLE
+"pmos2vbc_auo" FLOAT DOUBLE
+"pmos2vbc_bvt" FLOAT DOUBLE
+"pmos2vbc_buo" FLOAT DOUBLE
+"tox_wcr_nmos2vbf" FLOAT DOUBLE
+"neffo_wcr_nmos2vbf" FLOAT DOUBLE
+"neffl_wcr_nmos2vbf" FLOAT DOUBLE
+"neffw_wcr_nmos2vbf" FLOAT DOUBLE
+"vfbo_wca_nmos2vbf" FLOAT DOUBLE
+"vfbl_wca_nmos2vbf" FLOAT DOUBLE
+"vfbw_wca_nmos2vbf" FLOAT DOUBLE
+"vfblw_wca_nmos2vbf" FLOAT DOUBLE
+"cfl_wca_nmos2vbf" FLOAT DOUBLE
+"cfw_wca_nmos2vbf" FLOAT DOUBLE
+"thesatl_wcr_nmos2vbf" FLOAT DOUBLE
+"thesatw_wcr_nmos2vbf" FLOAT DOUBLE
+"betno_wcr_nmos2vbf" FLOAT DOUBLE
+"betnl_wcr_nmos2vbf" FLOAT DOUBLE
+"betnw_wcr_nmos2vbf" FLOAT DOUBLE
+"lvar_wca_nmos2vbf" FLOAT DOUBLE
+"wvar_wca_nmos2vbf" FLOAT DOUBLE
+"cjorbot_wcr_nmos2vbf" FLOAT DOUBLE
+"rsw1_wcr_nmos2vbf" FLOAT DOUBLE
+"tox_nmos2vbf_mcpr_std" FLOAT DOUBLE
+"tox_nmos2vbf_mcpr_tol" FLOAT DOUBLE
+"tox_nmos2vbf_misr_std" FLOAT DOUBLE
+"tox_nmos2vbf_misr_tol" FLOAT DOUBLE
+"vfbo_nmos2vbf_mcpa_std" FLOAT DOUBLE
+"vfbo_nmos2vbf_mcpa_tol" FLOAT DOUBLE
+"vfbo_nmos2vbf_misa_std" FLOAT DOUBLE
+"vfbo_nmos2vbf_misa_tol" FLOAT DOUBLE
+"vfbl_nmos2vbf_mcpa_std" FLOAT DOUBLE
+"vfbl_nmos2vbf_mcpa_tol" FLOAT DOUBLE
+"vfbw_nmos2vbf_mcpa_std" FLOAT DOUBLE
+"vfbw_nmos2vbf_mcpa_tol" FLOAT DOUBLE
+"vfblw_nmos2vbf_mcpa_std" FLOAT DOUBLE
+"vfblw_nmos2vbf_mcpa_tol" FLOAT DOUBLE
+"neffo_nmos2vbf_mcpr_std" FLOAT DOUBLE
+"neffo_nmos2vbf_mcpr_tol" FLOAT DOUBLE
+"neffo_nmos2vbf_misr_std" FLOAT DOUBLE
+"neffo_nmos2vbf_misr_tol" FLOAT DOUBLE
+"neffl_nmos2vbf_mcpr_std" FLOAT DOUBLE
+"neffl_nmos2vbf_mcpr_tol" FLOAT DOUBLE
+"neffw_nmos2vbf_mcpr_std" FLOAT DOUBLE
+"neffw_nmos2vbf_mcpr_tol" FLOAT DOUBLE
+"cfl_nmos2vbf_mcpa_std" FLOAT DOUBLE
+"cfl_nmos2vbf_mcpa_tol" FLOAT DOUBLE
+"cfw_nmos2vbf_mcpa_std" FLOAT DOUBLE
+"cfw_nmos2vbf_mcpa_tol" FLOAT DOUBLE
+"thesatl_nmos2vbf_mcpr_std" FLOAT DOUBLE
+"thesatl_nmos2vbf_mcpr_tol" FLOAT DOUBLE
+"thesatw_nmos2vbf_mcpr_std" FLOAT DOUBLE
+"thesatw_nmos2vbf_mcpr_tol" FLOAT DOUBLE
+"rsw1_nmos2vbf_mcpr_std" FLOAT DOUBLE
+"rsw1_nmos2vbf_mcpr_tol" FLOAT DOUBLE
+"betno_nmos2vbf_mcpr_std" FLOAT DOUBLE
+"betno_nmos2vbf_mcpr_tol" FLOAT DOUBLE
+"betno_nmos2vbf_misr_std" FLOAT DOUBLE
+"betno_nmos2vbf_misr_tol" FLOAT DOUBLE
+"betnl_nmos2vbf_mcpr_std" FLOAT DOUBLE
+"betnl_nmos2vbf_mcpr_tol" FLOAT DOUBLE
+"betnw_nmos2vbf_mcpr_std" FLOAT DOUBLE
+"betnw_nmos2vbf_mcpr_tol" FLOAT DOUBLE
+"lvar_nmos2vbf_mcpa_std" FLOAT DOUBLE
+"lvar_nmos2vbf_misa_std" FLOAT DOUBLE
+"lvar_nmos2vbf_mcpa_tol" FLOAT DOUBLE
+"lvar_nmos2vbf_misa_tol" FLOAT DOUBLE
+"wvar_nmos2vbf_mcpa_std" FLOAT DOUBLE
+"wvar_nmos2vbf_misa_std" FLOAT DOUBLE
+"wvar_nmos2vbf_mcpa_tol" FLOAT DOUBLE
+"wvar_nmos2vbf_misa_tol" FLOAT DOUBLE
+"nmos2vbf_avt_wl" FLOAT DOUBLE
+"nmos2vbf_avt_w" FLOAT DOUBLE
+"nmos2vbf_avt_l" FLOAT DOUBLE
+"nmos2vbf_auo_wl" FLOAT DOUBLE
+"nmos2vbf_auo_w" FLOAT DOUBLE
+"nmos2vbf_auo_l" FLOAT DOUBLE
+"nmos2vbf_bvt" FLOAT DOUBLE
+"nmos2vbf_buo" FLOAT DOUBLE
+"tox_wcr_nmos2vfdncc" FLOAT DOUBLE
+"neffo_wcr_nmos2vfdncc" FLOAT DOUBLE
+"neffl_wcr_nmos2vfdncc" FLOAT DOUBLE
+"neffw_wcr_nmos2vfdncc" FLOAT DOUBLE
+"vfbo_wca_nmos2vfdncc" FLOAT DOUBLE
+"vfbl_wca_nmos2vfdncc" FLOAT DOUBLE
+"vfbw_wca_nmos2vfdncc" FLOAT DOUBLE
+"vfblw_wca_nmos2vfdncc" FLOAT DOUBLE
+"cfl_wca_nmos2vfdncc" FLOAT DOUBLE
+"cfw_wca_nmos2vfdncc" FLOAT DOUBLE
+"thesatl_wcr_nmos2vfdncc" FLOAT DOUBLE
+"thesatw_wcr_nmos2vfdncc" FLOAT DOUBLE
+"betno_wcr_nmos2vfdncc" FLOAT DOUBLE
+"betnl_wcr_nmos2vfdncc" FLOAT DOUBLE
+"betnw_wcr_nmos2vfdncc" FLOAT DOUBLE
+"lvar_wca_nmos2vfdncc" FLOAT DOUBLE
+"wvar_wca_nmos2vfdncc" FLOAT DOUBLE
+"cjorbot_wcr_nmos2vfdncc" FLOAT DOUBLE
+"rsw1_wcr_nmos2vfdncc" FLOAT DOUBLE
+"tox_nmos2vfdncc_mcpr_std" FLOAT DOUBLE
+"tox_nmos2vfdncc_mcpr_tol" FLOAT DOUBLE
+"tox_nmos2vfdncc_misr_std" FLOAT DOUBLE
+"tox_nmos2vfdncc_misr_tol" FLOAT DOUBLE
+"vfbo_nmos2vfdncc_mcpa_std" FLOAT DOUBLE
+"vfbo_nmos2vfdncc_mcpa_tol" FLOAT DOUBLE
+"vfbo_nmos2vfdncc_misa_std" FLOAT DOUBLE
+"vfbo_nmos2vfdncc_misa_tol" FLOAT DOUBLE
+"vfbl_nmos2vfdncc_mcpa_std" FLOAT DOUBLE
+"vfbl_nmos2vfdncc_mcpa_tol" FLOAT DOUBLE
+"vfbl_nmos2vfdncc_misa_std" FLOAT DOUBLE
+"vfbl_nmos2vfdncc_misa_tol" FLOAT DOUBLE
+"vfbw_nmos2vfdncc_mcpa_std" FLOAT DOUBLE
+"vfbw_nmos2vfdncc_mcpa_tol" FLOAT DOUBLE
+"vfbw_nmos2vfdncc_misa_std" FLOAT DOUBLE
+"vfbw_nmos2vfdncc_misa_tol" FLOAT DOUBLE
+"vfblw_nmos2vfdncc_mcpa_std" FLOAT DOUBLE
+"vfblw_nmos2vfdncc_mcpa_tol" FLOAT DOUBLE
+"vfblw_nmos2vfdncc_misa_std" FLOAT DOUBLE
+"vfblw_nmos2vfdncc_misa_tol" FLOAT DOUBLE
+"neffo_nmos2vfdncc_mcpr_std" FLOAT DOUBLE
+"neffo_nmos2vfdncc_mcpr_tol" FLOAT DOUBLE
+"neffo_nmos2vfdncc_misr_std" FLOAT DOUBLE
+"neffo_nmos2vfdncc_misr_tol" FLOAT DOUBLE
+"neffl_nmos2vfdncc_mcpr_std" FLOAT DOUBLE
+"neffl_nmos2vfdncc_mcpr_tol" FLOAT DOUBLE
+"neffw_nmos2vfdncc_mcpr_std" FLOAT DOUBLE
+"neffw_nmos2vfdncc_mcpr_tol" FLOAT DOUBLE
+"neffl_nmos2vfdncc_misr_std" FLOAT DOUBLE
+"neffl_nmos2vfdncc_misr_tol" FLOAT DOUBLE
+"neffw_nmos2vfdncc_misr_std" FLOAT DOUBLE
+"neffw_nmos2vfdncc_misr_tol" FLOAT DOUBLE
+"cfl_nmos2vfdncc_mcpa_std" FLOAT DOUBLE
+"cfl_nmos2vfdncc_mcpa_tol" FLOAT DOUBLE
+"cfw_nmos2vfdncc_mcpa_std" FLOAT DOUBLE
+"cfw_nmos2vfdncc_mcpa_tol" FLOAT DOUBLE
+"cfl_nmos2vfdncc_misa_std" FLOAT DOUBLE
+"cfl_nmos2vfdncc_misa_tol" FLOAT DOUBLE
+"cfw_nmos2vfdncc_misa_std" FLOAT DOUBLE
+"cfw_nmos2vfdncc_misa_tol" FLOAT DOUBLE
+"thesatl_nmos2vfdncc_mcpr_std" FLOAT DOUBLE
+"thesatl_nmos2vfdncc_mcpr_tol" FLOAT DOUBLE
+"thesatl_nmos2vfdncc_misr_std" FLOAT DOUBLE
+"thesatl_nmos2vfdncc_misr_tol" FLOAT DOUBLE
+"thesatw_nmos2vfdncc_mcpr_std" FLOAT DOUBLE
+"thesatw_nmos2vfdncc_mcpr_tol" FLOAT DOUBLE
+"thesatw_nmos2vfdncc_misr_std" FLOAT DOUBLE
+"thesatw_nmos2vfdncc_misr_tol" FLOAT DOUBLE
+"rsw1_nmos2vfdncc_mcpr_std" FLOAT DOUBLE
+"rsw1_nmos2vfdncc_mcpr_tol" FLOAT DOUBLE
+"rsw1_nmos2vfdncc_misr_std" FLOAT DOUBLE
+"rsw1_nmos2vfdncc_misr_tol" FLOAT DOUBLE
+"betno_nmos2vfdncc_mcpr_std" FLOAT DOUBLE
+"betno_nmos2vfdncc_mcpr_tol" FLOAT DOUBLE
+"betno_nmos2vfdncc_misr_std" FLOAT DOUBLE
+"betno_nmos2vfdncc_misr_tol" FLOAT DOUBLE
+"betnl_nmos2vfdncc_mcpr_std" FLOAT DOUBLE
+"betnl_nmos2vfdncc_mcpr_tol" FLOAT DOUBLE
+"betnl_nmos2vfdncc_misr_std" FLOAT DOUBLE
+"betnl_nmos2vfdncc_misr_tol" FLOAT DOUBLE
+"betnw_nmos2vfdncc_mcpr_std" FLOAT DOUBLE
+"betnw_nmos2vfdncc_mcpr_tol" FLOAT DOUBLE
+"betnw_nmos2vfdncc_misr_std" FLOAT DOUBLE
+"betnw_nmos2vfdncc_misr_tol" FLOAT DOUBLE
+"lvar_nmos2vfdncc_mcpa_std" FLOAT DOUBLE
+"lvar_nmos2vfdncc_misa_std" FLOAT DOUBLE
+"lvar_nmos2vfdncc_mcpa_tol" FLOAT DOUBLE
+"lvar_nmos2vfdncc_misa_tol" FLOAT DOUBLE
+"wvar_nmos2vfdncc_mcpa_std" FLOAT DOUBLE
+"wvar_nmos2vfdncc_misa_std" FLOAT DOUBLE
+"wvar_nmos2vfdncc_mcpa_tol" FLOAT DOUBLE
+"wvar_nmos2vfdncc_misa_tol" FLOAT DOUBLE
+"nmos2vfdncc_avt_wl" FLOAT DOUBLE
+"nmos2vfdncc_avt_w" FLOAT DOUBLE
+"nmos2vfdncc_avt_l" FLOAT DOUBLE
+"nmos2vfdncc_auo_wl" FLOAT DOUBLE
+"nmos2vfdncc_auo_w" FLOAT DOUBLE
+"nmos2vfdncc_auo_l" FLOAT DOUBLE
+"nmos2vfdncc_bvt" FLOAT DOUBLE
+"nmos2vfdncc_buo" FLOAT DOUBLE
+"tox_wcr_nmos2vfdncd" FLOAT DOUBLE
+"neffo_wcr_nmos2vfdncd" FLOAT DOUBLE
+"neffl_wcr_nmos2vfdncd" FLOAT DOUBLE
+"neffw_wcr_nmos2vfdncd" FLOAT DOUBLE
+"vfbo_wca_nmos2vfdncd" FLOAT DOUBLE
+"vfbl_wca_nmos2vfdncd" FLOAT DOUBLE
+"vfbw_wca_nmos2vfdncd" FLOAT DOUBLE
+"vfblw_wca_nmos2vfdncd" FLOAT DOUBLE
+"cfl_wca_nmos2vfdncd" FLOAT DOUBLE
+"cfw_wca_nmos2vfdncd" FLOAT DOUBLE
+"thesatl_wcr_nmos2vfdncd" FLOAT DOUBLE
+"thesatw_wcr_nmos2vfdncd" FLOAT DOUBLE
+"betno_wcr_nmos2vfdncd" FLOAT DOUBLE
+"betnl_wcr_nmos2vfdncd" FLOAT DOUBLE
+"betnw_wcr_nmos2vfdncd" FLOAT DOUBLE
+"lvar_wca_nmos2vfdncd" FLOAT DOUBLE
+"wvar_wca_nmos2vfdncd" FLOAT DOUBLE
+"cjorbot_wcr_nmos2vfdncd" FLOAT DOUBLE
+"rsw1_wcr_nmos2vfdncd" FLOAT DOUBLE
+"tox_nmos2vfdncd_mcpr_std" FLOAT DOUBLE
+"tox_nmos2vfdncd_mcpr_tol" FLOAT DOUBLE
+"tox_nmos2vfdncd_misr_std" FLOAT DOUBLE
+"tox_nmos2vfdncd_misr_tol" FLOAT DOUBLE
+"vfbo_nmos2vfdncd_mcpa_std" FLOAT DOUBLE
+"vfbo_nmos2vfdncd_mcpa_tol" FLOAT DOUBLE
+"vfbo_nmos2vfdncd_misa_std" FLOAT DOUBLE
+"vfbo_nmos2vfdncd_misa_tol" FLOAT DOUBLE
+"vfbl_nmos2vfdncd_mcpa_std" FLOAT DOUBLE
+"vfbl_nmos2vfdncd_mcpa_tol" FLOAT DOUBLE
+"vfbl_nmos2vfdncd_misa_std" FLOAT DOUBLE
+"vfbl_nmos2vfdncd_misa_tol" FLOAT DOUBLE
+"vfbw_nmos2vfdncd_mcpa_std" FLOAT DOUBLE
+"vfbw_nmos2vfdncd_mcpa_tol" FLOAT DOUBLE
+"vfbw_nmos2vfdncd_misa_std" FLOAT DOUBLE
+"vfbw_nmos2vfdncd_misa_tol" FLOAT DOUBLE
+"vfblw_nmos2vfdncd_mcpa_std" FLOAT DOUBLE
+"vfblw_nmos2vfdncd_mcpa_tol" FLOAT DOUBLE
+"vfblw_nmos2vfdncd_misa_std" FLOAT DOUBLE
+"vfblw_nmos2vfdncd_misa_tol" FLOAT DOUBLE
+"neffo_nmos2vfdncd_mcpr_std" FLOAT DOUBLE
+"neffo_nmos2vfdncd_mcpr_tol" FLOAT DOUBLE
+"neffo_nmos2vfdncd_misr_std" FLOAT DOUBLE
+"neffo_nmos2vfdncd_misr_tol" FLOAT DOUBLE
+"neffl_nmos2vfdncd_mcpr_std" FLOAT DOUBLE
+"neffl_nmos2vfdncd_mcpr_tol" FLOAT DOUBLE
+"neffw_nmos2vfdncd_mcpr_std" FLOAT DOUBLE
+"neffw_nmos2vfdncd_mcpr_tol" FLOAT DOUBLE
+"neffl_nmos2vfdncd_misr_std" FLOAT DOUBLE
+"neffl_nmos2vfdncd_misr_tol" FLOAT DOUBLE
+"neffw_nmos2vfdncd_misr_std" FLOAT DOUBLE
+"neffw_nmos2vfdncd_misr_tol" FLOAT DOUBLE
+"cfl_nmos2vfdncd_mcpa_std" FLOAT DOUBLE
+"cfl_nmos2vfdncd_mcpa_tol" FLOAT DOUBLE
+"cfw_nmos2vfdncd_mcpa_std" FLOAT DOUBLE
+"cfw_nmos2vfdncd_mcpa_tol" FLOAT DOUBLE
+"cfl_nmos2vfdncd_misa_std" FLOAT DOUBLE
+"cfl_nmos2vfdncd_misa_tol" FLOAT DOUBLE
+"cfw_nmos2vfdncd_misa_std" FLOAT DOUBLE
+"cfw_nmos2vfdncd_misa_tol" FLOAT DOUBLE
+"thesatl_nmos2vfdncd_mcpr_std" FLOAT DOUBLE
+"thesatl_nmos2vfdncd_mcpr_tol" FLOAT DOUBLE
+"thesatl_nmos2vfdncd_misr_std" FLOAT DOUBLE
+"thesatl_nmos2vfdncd_misr_tol" FLOAT DOUBLE
+"thesatw_nmos2vfdncd_mcpr_std" FLOAT DOUBLE
+"thesatw_nmos2vfdncd_mcpr_tol" FLOAT DOUBLE
+"thesatw_nmos2vfdncd_misr_std" FLOAT DOUBLE
+"thesatw_nmos2vfdncd_misr_tol" FLOAT DOUBLE
+"rsw1_nmos2vfdncd_mcpr_std" FLOAT DOUBLE
+"rsw1_nmos2vfdncd_mcpr_tol" FLOAT DOUBLE
+"rsw1_nmos2vfdncd_misr_std" FLOAT DOUBLE
+"rsw1_nmos2vfdncd_misr_tol" FLOAT DOUBLE
+"betno_nmos2vfdncd_mcpr_std" FLOAT DOUBLE
+"betno_nmos2vfdncd_mcpr_tol" FLOAT DOUBLE
+"betno_nmos2vfdncd_misr_std" FLOAT DOUBLE
+"betno_nmos2vfdncd_misr_tol" FLOAT DOUBLE
+"betnl_nmos2vfdncd_mcpr_std" FLOAT DOUBLE
+"betnl_nmos2vfdncd_mcpr_tol" FLOAT DOUBLE
+"betnl_nmos2vfdncd_misr_std" FLOAT DOUBLE
+"betnl_nmos2vfdncd_misr_tol" FLOAT DOUBLE
+"betnw_nmos2vfdncd_mcpr_std" FLOAT DOUBLE
+"betnw_nmos2vfdncd_mcpr_tol" FLOAT DOUBLE
+"betnw_nmos2vfdncd_misr_std" FLOAT DOUBLE
+"betnw_nmos2vfdncd_misr_tol" FLOAT DOUBLE
+"lvar_nmos2vfdncd_mcpa_std" FLOAT DOUBLE
+"lvar_nmos2vfdncd_misa_std" FLOAT DOUBLE
+"lvar_nmos2vfdncd_mcpa_tol" FLOAT DOUBLE
+"lvar_nmos2vfdncd_misa_tol" FLOAT DOUBLE
+"wvar_nmos2vfdncd_mcpa_std" FLOAT DOUBLE
+"wvar_nmos2vfdncd_misa_std" FLOAT DOUBLE
+"wvar_nmos2vfdncd_mcpa_tol" FLOAT DOUBLE
+"wvar_nmos2vfdncd_misa_tol" FLOAT DOUBLE
+"nmos2vfdncd_avt_wl" FLOAT DOUBLE
+"nmos2vfdncd_avt_w" FLOAT DOUBLE
+"nmos2vfdncd_avt_l" FLOAT DOUBLE
+"nmos2vfdncd_auo_wl" FLOAT DOUBLE
+"nmos2vfdncd_auo_w" FLOAT DOUBLE
+"nmos2vfdncd_auo_l" FLOAT DOUBLE
+"nmos2vfdncd_bvt" FLOAT DOUBLE
+"nmos2vfdncd_buo" FLOAT DOUBLE
+"corner_res" FLOAT DOUBLE
+"mcmode_res" FLOAT DOUBLE
+"shrink" FLOAT DOUBLE
+"rpoly1ns_res_tol" FLOAT DOUBLE
+"rpoly1ns_headres_tol" FLOAT DOUBLE
+"rpoly1ns_wres_tol" FLOAT DOUBLE
+"rpoly1ns_mr" FLOAT DOUBLE
+"rpoly1ps_res_tol" FLOAT DOUBLE
+"rpoly1ps_headres_tol" FLOAT DOUBLE
+"rpoly1ps_wres_tol" FLOAT DOUBLE
+"rpoly1ps_mr" FLOAT DOUBLE
+"rpoly1p_res_tol" FLOAT DOUBLE
+"rpoly1p_headres_tol" FLOAT DOUBLE
+"rpoly1p_res_head_corr" FLOAT DOUBLE
+"rpoly1p_wres_tol" FLOAT DOUBLE
+"rpoly1p_mr" FLOAT DOUBLE
+"rndiff_res_tol" FLOAT DOUBLE
+"rndiff_headres_tol" FLOAT DOUBLE
+"rndiff_wres_tol" FLOAT DOUBLE
+"rndiff_mr" FLOAT DOUBLE
+"rpoly1h_vari" FLOAT DOUBLE
+"rpoly1ns_vari" FLOAT DOUBLE
+"rpoly1ps_vari" FLOAT DOUBLE
+"rpoly1p_vari" FLOAT DOUBLE
+"rndiff_vari" FLOAT DOUBLE
+) PROP(
+"key" "parameters"
+)
+VALUE
+"top-level" "top-level" (
+2.700000000000000e+01
+2.700000000000000e+01
+0.000000000000000e+00
+1.000000000000000e+00
+3.000000000000000e+00
+3.000000000000000e+00
+3.000000000000000e+00
+3.000000000000000e+00
+3.000000000000000e+00
+3.389000000000000e-09
+-9.673000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+6.350000000000000e-09
+-9.500000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+4.000000000000000e-07
+5.600000000000000e-12
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+5.000000000000000e-03
+1.250000000000000e-02
+5.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+3.330000000000000e-03
+2.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+6.700000000000000e-03
+5.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.000000000000000e-09
+5.000000000000000e-10
+0.000000000000000e+00
+0.000000000000000e+00
+8.000000000000000e-03
+2.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+6.717510000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+5.000000000000000e-02
+1.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+3.000000000000000e-01
+1.000000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+3.000000000000000e-02
+1.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+6.000000000000000e-09
+1.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+6.400000000000000e+00
+9.000000000000000e+00
+3.400000000000000e-10
+3.400000000000000e-10
+0.000000000000000e+00
+0.000000000000000e+00
+6.000000000000000e-09
+1.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+6.000000000000000e+00
+6.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+4.000000000000000e-10
+4.000000000000000e-10
+0.000000000000000e+00
+0.000000000000000e+00
+6.000000000000000e-09
+1.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+6.400000000000000e+00
+9.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+3.213000000000000e-10
+3.213000000000000e-10
+0.000000000000000e+00
+0.000000000000000e+00
+6.000000000000000e-09
+1.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+6.000000000000000e+00
+6.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+4.000000000000000e-10
+4.000000000000000e-10
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.000000000000000e-02
+5.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-02
+2.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+4.000000000000000e-02
+5.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+5.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+4.000000000000000e-09
+1.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-08
+5.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+4.000000000000000e-04
+0.000000000000000e+00
+4.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+7.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+5.000000000000000e-03
+0.000000000000000e+00
+4.000000000000000e-03
+0.000000000000000e+00
+1.000000000000000e-03
+0.000000000000000e+00
+4.000000000000000e-04
+0.000000000000000e+00
+5.000000000000000e-03
+0.000000000000000e+00
+1.000000000000000e-02
+0.000000000000000e+00
+5.000000000000000e-03
+0.000000000000000e+00
+3.000000000000000e-02
+0.000000000000000e+00
+1.000000000000000e-02
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+1.000000000000000e-02
+0.000000000000000e+00
+1.800000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-09
+5.000000000000000e-10
+0.000000000000000e+00
+0.000000000000000e+00
+5.000000000000000e-09
+1.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+5.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+2.000000000000000e-02
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+7.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.100000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.900000000000000e-03
+0.000000000000000e+00
+1.000000000000000e-04
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+4.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+4.200000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.800000000000000e-01
+0.000000000000000e+00
+8.999999999999999e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.800000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.500000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+5.000000000000000e-03
+0.000000000000000e+00
+1.000000000000000e-02
+0.000000000000000e+00
+2.000000000000000e-03
+0.000000000000000e+00
+1.000000000000000e-04
+0.000000000000000e+00
+3.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.500000000000000e-02
+0.000000000000000e+00
+5.000000000000000e-03
+0.000000000000000e+00
+2.500000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+7.000000000000000e-03
+0.000000000000000e+00
+1.500000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+5.000000000000000e-03
+0.000000000000000e+00
+1.050000000000000e-01
+0.000000000000000e+00
+2.700000000000000e-02
+0.000000000000000e+00
+2.000000000000000e-09
+5.000000000000000e-10
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-09
+5.000000000000000e-10
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+4.000000000000000e-03
+0.000000000000000e+00
+4.000000000000000e-04
+0.000000000000000e+00
+5.000000000000000e-03
+0.000000000000000e+00
+1.000000000000000e-02
+0.000000000000000e+00
+3.000000000000000e-02
+0.000000000000000e+00
+1.000000000000000e-02
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+1.800000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-09
+0.000000000000000e+00
+5.000000000000000e-09
+0.000000000000000e+00
+5.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+2.000000000000000e-02
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.600000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.500000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+6.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+5.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+5.000000000000000e-03
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.400000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+4.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+6.500000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.200000000000000e-01
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.800000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.700000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+6.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+6.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-2.000000000000000e-04
+0.000000000000000e+00
+6.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-2.000000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+7.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.500000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+4.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.500000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.500000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+4.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.000000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+4.500000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+6.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+6.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-03
+0.000000000000000e+00
+6.000000000000000e-03
+0.000000000000000e+00
+3.500000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-3.000000000000000e-04
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-2.200000000000000e-01
+0.000000000000000e+00
+5.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.500000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.670000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.330000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-2.000000000000000e-04
+0.000000000000000e+00
+6.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-2.000000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+5.000000000000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.670000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.167000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.300000000000000e-04
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.170000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-2.000000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.670000000000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.700000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+)
+END

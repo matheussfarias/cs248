@@ -1,0 +1,12 @@
+CADENCE IHNL11140
+$model
+avatar_local/fet_test/schematic fet_test
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+rwaferback rwaferback
+subthick subthick
+vwaferback vwaferback
+$endparam

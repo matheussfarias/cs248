@@ -1,0 +1,7 @@
+
+
+sim:
+	spectre -64 input.rram.scs -format tr0ascii
+
+view:
+	cat 

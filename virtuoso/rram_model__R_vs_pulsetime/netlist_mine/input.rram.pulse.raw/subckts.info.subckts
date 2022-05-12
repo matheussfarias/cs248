@@ -1,0 +1,506 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "20.1.0.404.isr13"
+"date" "5:57:51 PM, Mon May 9, 2022"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+"subckt_instances" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"cqn_2t" "subckt" (
+""
+""
+""
+)
+"rf_nmos2vfdncc" "subckt" (
+""
+""
+""
+)
+"rmetal2" "subckt" (
+""
+""
+""
+)
+"cqndg_2t" "subckt" (
+""
+""
+""
+)
+"icnmod" "subckt" (
+""
+""
+""
+)
+"nmosvar2vbc" "subckt" (
+""
+""
+""
+)
+"rmetallb" "subckt" (
+""
+""
+""
+)
+"pmos1vbc_4" "subckt" (
+""
+""
+""
+)
+"pmos1vbc_bl_4" "subckt" (
+""
+""
+""
+)
+"pmos2vbc" "subckt" (
+""
+""
+""
+)
+"rndiff_2t" "subckt" (
+""
+""
+""
+)
+"rpoly1ps_2t" "subckt" (
+""
+""
+""
+)
+"nmos1vlc" "subckt" (
+""
+""
+""
+)
+"rf_nmos2vlc_l0_22" "subckt" (
+""
+""
+""
+)
+"esd_dio_l0_46" "subckt" (
+""
+""
+""
+)
+"pmos2vlc" "subckt" (
+""
+""
+""
+)
+"indSymPar_MIMJ" "subckt" (
+""
+""
+""
+)
+"vsubmod" "subckt" (
+""
+""
+""
+)
+"rmetal3" "subckt" (
+""
+""
+""
+)
+"cvppm1m3" "subckt" (
+""
+""
+""
+)
+"nmos1vbc" "subckt" (
+""
+""
+""
+)
+"nmos1vbc_bl_4" "subckt" (
+""
+""
+""
+)
+"rmetalmi" "subckt" (
+""
+""
+""
+)
+"pmos2vlc_dig" "subckt" (
+""
+""
+""
+)
+"nmos2vlc" "subckt" (
+""
+""
+""
+)
+"nmosvar1vbc" "subckt" (
+""
+""
+""
+)
+"rf_nmos2vfdncd" "subckt" (
+""
+""
+""
+)
+"nmos1vbf_3" "subckt" (
+""
+""
+""
+)
+"rpoly1p" "subckt" (
+""
+""
+""
+)
+"pmos1vbc" "subckt" (
+""
+""
+""
+)
+"nmos1vbc_4" "subckt" (
+""
+""
+""
+)
+"rpoly1ns" "subckt" (
+""
+""
+""
+)
+"nmos1vbf_ln" "subckt" (
+""
+""
+""
+)
+"esd_dio" "subckt" (
+""
+""
+""
+)
+"pmos1vbf_hvt_3" "subckt" (
+""
+""
+""
+)
+"rram0_tier2" "subckt" (
+""
+""
+""
+)
+"nmos1vbf_hvt_3" "subckt" (
+""
+""
+""
+)
+"rmetalmj" "subckt" (
+""
+""
+""
+)
+"cvppm1m4MQ" "subckt" (
+""
+""
+""
+)
+"nmos1vbf" "subckt" (
+""
+""
+""
+)
+"rndiff" "subckt" (
+""
+""
+""
+)
+"nmos2vbc" "subckt" (
+""
+""
+""
+)
+"esd_dio_hbm2kv" "subckt" (
+""
+""
+""
+)
+"rpoly1h" "subckt" (
+""
+""
+""
+)
+"scnmod" "subckt" (
+""
+""
+""
+)
+"rf_nmos1vbf_ln" "subckt" (
+""
+""
+""
+)
+"analog_dio" "subckt" (
+""
+""
+""
+)
+"pmos2vbc_bl_4" "subckt" (
+""
+""
+""
+)
+"respar" "subckt" (
+""
+""
+""
+)
+"rf_nmos1vbf_l0_12" "subckt" (
+""
+""
+""
+)
+"nmos2vbc_4" "subckt" (
+"sbl wfinger nfinger psl sb scc sdl mfu0 sccl ad wpemod nrs nrsl pre xf_subext as par1 pd sa sca trise w adl scb ps scal sd mfvt nrdl stimod l wpemodl asl nrd pdl sal scbl"
+"d g s b 0"
+"N0"
+)
+"pmos1vlc_dig" "subckt" (
+""
+""
+""
+)
+"nmos2vht_4" "subckt" (
+""
+""
+""
+)
+"pmos1vht_4" "subckt" (
+""
+""
+""
+)
+"indSym_MI" "subckt" (
+""
+""
+""
+)
+"cvppm1m4" "subckt" (
+""
+""
+""
+)
+"dcnmod" "subckt" (
+""
+""
+""
+)
+"pmos2vht_4" "subckt" (
+""
+""
+""
+)
+"rmetal4" "subckt" (
+""
+""
+""
+)
+"nmos2vbf" "subckt" (
+""
+""
+""
+)
+"rf_nmos2vbc_l0_22" "subckt" (
+""
+""
+""
+)
+"rf_nmos1vbflnb" "subckt" (
+""
+""
+""
+)
+"cqn" "subckt" (
+""
+""
+""
+)
+"indSym_AlPad" "subckt" (
+""
+""
+""
+)
+"pmos2vbc_4" "subckt" (
+""
+""
+""
+)
+"rmetalmq" "subckt" (
+""
+""
+""
+)
+"rpoly1ps" "subckt" (
+""
+""
+""
+)
+"indSymVarWS_AlPad" "subckt" (
+""
+""
+""
+)
+"pmos1vlc" "subckt" (
+""
+""
+""
+)
+"rpoly1ns_2t" "subckt" (
+""
+""
+""
+)
+"cmimcaprf" "subckt" (
+""
+""
+""
+)
+"cqndg" "subckt" (
+""
+""
+""
+)
+"analog_dio_l0_46" "subckt" (
+""
+""
+""
+)
+"rf_nmos1vbc_l0_12" "subckt" (
+""
+""
+""
+)
+"rf_pmos2vbc_l0_22" "subckt" (
+""
+""
+""
+)
+"cvppm1m2MQ" "subckt" (
+""
+""
+""
+)
+"rf_nmos1vbflna" "subckt" (
+""
+""
+""
+)
+"nmos2vbc_bl_4" "subckt" (
+""
+""
+""
+)
+"rmetal1" "subckt" (
+""
+""
+""
+)
+"lsubmod" "subckt" (
+""
+""
+""
+)
+"rram0_tier1" "subckt" (
+""
+""
+""
+)
+"npdio" "subckt" (
+""
+""
+""
+)
+"nmos1vht_4" "subckt" (
+""
+""
+""
+)
+"indSymVarWS_MI" "subckt" (
+""
+""
+""
+)
+"nmos2vlc_dig" "subckt" (
+""
+""
+""
+)
+"indSymVarWS_MIMJ" "subckt" (
+""
+""
+""
+)
+"rf_pmos1vbc_l0_12" "subckt" (
+""
+""
+""
+)
+"rpoly1h_2t" "subckt" (
+""
+""
+""
+)
+"esd_dio_cdm500" "subckt" (
+""
+""
+""
+)
+"efuse" "subckt" (
+""
+""
+""
+)
+"nmos2vbc_bl_gg2kv_hor" "subckt" (
+""
+""
+""
+)
+"rram0" "subckt" (
+"a0 g1 gamma0 I0 Vel0 beta g0 Cth Eag Ear T0 Tau_th gap_ini tstep V0 gap_max gap_min L Vread"
+"TE BE"
+"I0"
+)
+"nmos1vlc_dig" "subckt" (
+""
+""
+""
+)
+"nmos2vbc_bl_gg2kv_ver" "subckt" (
+""
+""
+""
+)
+"rpoly1p_2t" "subckt" (
+""
+""
+""
+)
+"cvppm1m2" "subckt" (
+""
+""
+""
+)
+"rf_nmos2vbf_l0_22" "subckt" (
+""
+""
+""
+)
+END

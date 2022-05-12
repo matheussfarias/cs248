@@ -1,0 +1,267 @@
+simulator lang=spectre insensitive=yes
+
+section tt
+
+// ==================================================
+// pmos calibration parameters (tt corner)
+// --------------------------------------------------
+
+parameters
++ pmos_mu_app__cm2_per_Vs   =   0.40*1.25*5*(50/(2*3.1415))*17*0.1638
++ pmos_vxo__cm_per_s        =   0.40*1.25*5*(50/(2*3.1415))*17*0.00036648e7
++ pmos_tox__m               =   15e-9
++ pmos_kox                  =   10
++ pmos_kspacer_sd           =   3.9
++ pmos_dibl__V_per_V        =   0.0002803
++ pmos_ss_fac               =   1.8407
++ pmos_alpha                =   5.0
++ pmos_beta                 =   2.5
++ pmos_rc__Ohm_m            =   0
++ pmos_lch__m               =   0.450e-6
++ pmos_lg__m                =   0.550e-6
++ pmos_lc__m                =   0.450e-6
++ pmos_hg__m                =   40e-9
++ pmos_hc__m                =   40e-9
++ pmos_vt0__V               =   -0.4758
++ pmos_id_min__A_per_m      =   0
++ pmos_exp_power_model      =   2
++ pmos_gidl_k0              =   (-8.0234 + 1)
++ pmos_gidl_k1              =   +3.1116
++ pmos_gidl_k2              =   -0.9593
++ pmos_gidl_k3              =   -0.5150
++ pmos_gidl_k4              =   -0.1723
++ pmos_gidl_k5              =   +0.0084
++ pmos_relative_meff        =   1.0
+
+// output from calibration in matlab:
+// ~~~ VS_param_cal_overall_p = 
+// ~~~   struct with fields:
+// ~~~ 
+// ~~~     mu_app__cm2_per_Vs: 0.1638
+// ~~~          vxo__cm_per_s: 3.6648e+03
+// ~~~                tox__nm: 15
+// ~~~                    kox: 10
+// ~~~         dibl__mV_per_V: 0.2803
+// ~~~                 ss_fac: 1.8407
+// ~~~                 alpha1: 5
+// ~~~                  beta1: 2.5000
+// ~~~                 Lg__nm: 450
+// ~~~                 Vt0__V: -0.4758
+// ~~~        id_min__A_per_m: 0
+// ~~~        exp_power_model: 2
+// ~~~               polarity: 'p'
+// ~~~              coef_gidl: [6×1 double]
+// ~~~ ans =
+// ~~~    -8.0234
+// ~~~     3.1116
+// ~~~    -0.9593
+// ~~~    -0.5150
+// ~~~    -0.1723
+// ~~~     0.0084
+
+// ==================================================
+
+// ==================================================
+// nmos calibration parameters (tt corner)
+// --------------------------------------------------
+
+parameters
++ nmos_mu_app__cm2_per_Vs   =   0.40*1.25*5*(50/(2*3.1415))*17*0.5814
++ nmos_vxo__cm_per_s        =   0.40*1.25*5*(50/(2*3.1415))*17*0.00092567e7
++ nmos_tox__m               =   15e-9
++ nmos_kox                  =   10
++ nmos_kspacer_sd           =   3.9
++ nmos_dibl__V_per_V        =   0.0290489
++ nmos_ss_fac               =   3.6878
++ nmos_alpha                =   5.0
++ nmos_beta                 =   2.5
++ nmos_rc__Ohm_m            =   0
++ nmos_lch__m               =   0.450e-6
++ nmos_lg__m                =   0.550e-6
++ nmos_lc__m                =   0.450e-6
++ nmos_hg__m                =   20e-9
++ nmos_hc__m                =   75e-9
++ nmos_vt0__V               =   0.6826
++ nmos_id_min__A_per_m      =   0
++ nmos_exp_power_model      =   2
++ nmos_gidl_k0              =   (-7.7550 + 1)
++ nmos_gidl_k1              =   +3.7214
++ nmos_gidl_k2              =   -2.1910
++ nmos_gidl_k3              =   -0.7062
++ nmos_gidl_k4              =   -0.3109
++ nmos_gidl_k5              =   +0.6298
++ nmos_relative_meff        =   1.0
+
+// output from calibration in matlab:
+// ~~~ VS_param_cal_overall_n = 
+// ~~~   struct with fields:
+// ~~~ 
+// ~~~     mu_app__cm2_per_Vs: 0.5814
+// ~~~          vxo__cm_per_s: 9.2567e+03
+// ~~~                tox__nm: 15
+// ~~~                    kox: 10
+// ~~~         dibl__mV_per_V: 29.0489
+// ~~~                 ss_fac: 3.6878
+// ~~~                 alpha1: 5
+// ~~~                  beta1: 2.5000
+// ~~~                 Lg__nm: 450
+// ~~~                 Vt0__V: 0.6826
+// ~~~        id_min__A_per_m: 0
+// ~~~        exp_power_model: 2
+// ~~~               polarity: 'n'
+// ~~~              coef_gidl: [6×1 double]
+// ~~~ ans =
+// ~~~    -7.5764
+// ~~~     3.3770
+// ~~~    -1.9042
+// ~~~    -0.5977
+// ~~~    -0.2436
+// ~~~     0.5032
+
+// ==================================================
+
+endsection
+
+
+
+section ff
+
+// ==================================================
+// pmos calibration parameters (ff corner)
+// --------------------------------------------------
+
+parameters
++ pmos_mu_app__cm2_per_Vs   =   0.40*1.25*5*(50/(2*3.1415))*17*0.1638
++ pmos_vxo__cm_per_s        =   0.40*1.25*5*(50/(2*3.1415))*17*0.00036648e7
++ pmos_tox__m               =   15e-9
++ pmos_kox                  =   10
++ pmos_kspacer_sd           =   3.9
++ pmos_dibl__V_per_V        =   0.0002803
++ pmos_ss_fac               =   1.8407
++ pmos_alpha                =   5.0
++ pmos_beta                 =   2.5
++ pmos_rc__Ohm_m            =   0
++ pmos_lch__m               =   0.450e-6
++ pmos_lg__m                =   0.550e-6
++ pmos_lc__m                =   0.450e-6
++ pmos_hg__m                =   40e-9
++ pmos_hc__m                =   40e-9
++ pmos_vt0__V               =   -0.4758 + 0.150
++ pmos_id_min__A_per_m      =   0
++ pmos_exp_power_model      =   2
++ pmos_gidl_k0              =   -8.0234
++ pmos_gidl_k1              =   +3.1116
++ pmos_gidl_k2              =   -0.9593
++ pmos_gidl_k3              =   -0.5150
++ pmos_gidl_k4              =   -0.1723
++ pmos_gidl_k5              =   +0.0084
++ pmos_relative_meff        =   1.0
+
+// ==================================================
+
+// ==================================================
+// nmos calibration parameters (ff corner)
+// --------------------------------------------------
+
+parameters
++ nmos_mu_app__cm2_per_Vs   =   0.40*1.25*5*(50/(2*3.1415))*17*0.5814
++ nmos_vxo__cm_per_s        =   0.40*1.25*5*(50/(2*3.1415))*17*0.00092567e7
++ nmos_tox__m               =   15e-9
++ nmos_kox                  =   10
++ nmos_kspacer_sd           =   3.9
++ nmos_dibl__V_per_V        =   0.0290489
++ nmos_ss_fac               =   3.6878
++ nmos_alpha                =   5.0
++ nmos_beta                 =   2.5
++ nmos_rc__Ohm_m            =   0
++ nmos_lch__m               =   0.450e-6
++ nmos_lg__m                =   0.550e-6
++ nmos_lc__m                =   0.450e-6
++ nmos_hg__m                =   20e-9
++ nmos_hc__m                =   75e-9
++ nmos_vt0__V               =   0.6826 - 0.150
++ nmos_id_min__A_per_m      =   0
++ nmos_exp_power_model      =   2
++ nmos_gidl_k0              =   -7.7550
++ nmos_gidl_k1              =   +3.7214
++ nmos_gidl_k2              =   -2.1910
++ nmos_gidl_k3              =   -0.7062
++ nmos_gidl_k4              =   -0.3109
++ nmos_gidl_k5              =   +0.6298
++ nmos_relative_meff        =   1.0
+
+// ==================================================
+
+endsection
+
+
+
+section ss
+
+// ==================================================
+// pmos calibration parameters (ss corner)
+// --------------------------------------------------
+
+parameters
++ pmos_mu_app__cm2_per_Vs   =   0.40*1.25*5*(50/(2*3.1415))*17*0.1638
++ pmos_vxo__cm_per_s        =   0.40*1.25*5*(50/(2*3.1415))*17*0.00036648e7
++ pmos_tox__m               =   15e-9
++ pmos_kox                  =   10
++ pmos_kspacer_sd           =   3.9
++ pmos_dibl__V_per_V        =   0.0002803
++ pmos_ss_fac               =   1.8407
++ pmos_alpha                =   5.0
++ pmos_beta                 =   2.5
++ pmos_rc__Ohm_m            =   0
++ pmos_lch__m               =   0.450e-6
++ pmos_lg__m                =   0.550e-6
++ pmos_lc__m                =   0.450e-6
++ pmos_hg__m                =   40e-9
++ pmos_hc__m                =   40e-9
++ pmos_vt0__V               =   -0.4758 - 0.150
++ pmos_id_min__A_per_m      =   0
++ pmos_exp_power_model      =   2
++ pmos_gidl_k0              =   -8.0234
++ pmos_gidl_k1              =   +3.1116
++ pmos_gidl_k2              =   -0.9593
++ pmos_gidl_k3              =   -0.5150
++ pmos_gidl_k4              =   -0.1723
++ pmos_gidl_k5              =   +0.0084
++ pmos_relative_meff        =   1.0
+
+// ==================================================
+
+// ==================================================
+// nmos calibration parameters (ss corner)
+// --------------------------------------------------
+
+parameters
++ nmos_mu_app__cm2_per_Vs   =   0.40*1.25*5*(50/(2*3.1415))*17*0.5814
++ nmos_vxo__cm_per_s        =   0.40*1.25*5*(50/(2*3.1415))*17*0.00092567e7
++ nmos_tox__m               =   15e-9
++ nmos_kox                  =   10
++ nmos_kspacer_sd           =   3.9
++ nmos_dibl__V_per_V        =   0.0290489
++ nmos_ss_fac               =   3.6878
++ nmos_alpha                =   5.0
++ nmos_beta                 =   2.5
++ nmos_rc__Ohm_m            =   0
++ nmos_lch__m               =   0.450e-6
++ nmos_lg__m                =   0.550e-6
++ nmos_lc__m                =   0.450e-6
++ nmos_hg__m                =   20e-9
++ nmos_hc__m                =   75e-9
++ nmos_vt0__V               =   0.6826 + 0.150
++ nmos_id_min__A_per_m      =   0
++ nmos_exp_power_model      =   2
++ nmos_gidl_k0              =   -7.7550
++ nmos_gidl_k1              =   +3.7214
++ nmos_gidl_k2              =   -2.1910
++ nmos_gidl_k3              =   -0.7062
++ nmos_gidl_k4              =   -0.3109
++ nmos_gidl_k5              =   +0.6298
++ nmos_relative_meff        =   1.0
+
+// ==================================================
+
+endsection

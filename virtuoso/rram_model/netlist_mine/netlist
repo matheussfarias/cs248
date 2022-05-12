@@ -1,0 +1,9 @@
+
+// Library name: avatar_local
+// Cell name: fet_test
+// View name: schematic
+N0 (net1 net_vg 0 0) nmos2vbc_4 l=320.0n wfinger=4u nfinger=1 m=1 sa=360n \
+        sb=360n sd=0
+I0 (net1 net_vd) rpoly1h_2t value=10.24K w=400n ser=1 m=1
+VG (net_vg 0) vsource type=pwl wave=[ 0 1.5 400n 1.5 450n 2 1u 2 ]
+VD (net_vd 0) vsource type=pwl wave=[ 0 0 200n 2.5 600n -2.5 800n 0 1u 0 ]

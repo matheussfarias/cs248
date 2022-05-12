@@ -1,0 +1,156 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "20.1.0.404.isr13"
+"date" "5:57:51 PM, Mon May 9, 2022"
+"design" "// Generated for: spectre"
+"analysis type" "info"
+"analysis name" "outputParameter"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+"ReferenceTemperature.Value" 27.0000
+"ReferenceTemperature.Units" "C"
+TYPE
+"bsim4~instparams" STRUCT(
+"tempeff" FLOAT DOUBLE PROP(
+"units" "C"
+"description" "Effective temperature for a single device"
+)
+"meff" FLOAT DOUBLE PROP(
+"description" "Effective multiplicity factor (m-factor)"
+)
+"weff" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Effective channel width (alias=lx62)"
+)
+"leff" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Effective channel length (alias=lx63)"
+)
+"weffcv" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Effective channel width for CV (alias=lx64)"
+)
+"leffcv" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Effective channel length for CV (alias=lx65)"
+)
+"vfbsd" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Flat band Voltage between the gate and Drain/source diffusions (alias=lx75)"
+)
+"rgbi" FLOAT DOUBLE PROP(
+"units" "Ohm"
+"description" "Gate bias-independent resistance"
+)
+"adeff" FLOAT DOUBLE PROP(
+"units" "m^2"
+"description" "Effective drain area"
+)
+"aseff" FLOAT DOUBLE PROP(
+"units" "m^2"
+"description" "Effective source area"
+)
+"pdeff" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Effective drain perimeter"
+)
+"pseff" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Effective source perimeter"
+)
+) PROP(
+"key" "inst"
+)
+"capacitor~instparams" STRUCT(
+"tempeff" FLOAT DOUBLE PROP(
+"units" "C"
+"description" "Effective temperature for a single device"
+)
+"meff" FLOAT DOUBLE PROP(
+"description" "Effective multiplicity factor (m-factor)"
+)
+"leff" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Effective capacitor length"
+)
+"weff" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Effective capacitor width"
+)
+"ceff" FLOAT DOUBLE PROP(
+"units" "F"
+"description" "Effective capacitance(alias=lv1)"
+)
+) PROP(
+"key" "inst"
+)
+"vsource~instparams" STRUCT(
+"tempeff" FLOAT DOUBLE PROP(
+"units" "C"
+"description" "Effective temperature for a single device"
+)
+) PROP(
+"key" "inst"
+)
+VALUE
+"N0.m1" "bsim4~instparams" (
+2.700000000000000e+01
+1.000000000000000e+00
+1.001397530565672e-04
+2.955404440429824e-07
+1.001397530565672e-04
+2.895404440429823e-07
+0.000000000000000e+00
+0.000000000000000e+00
+3.600000000000000e-11
+3.600000000000000e-11
+1.007199069434328e-04
+1.007199069434328e-04
+) PROP(
+"model" "N0.nmos2vbc_4mod"
+)
+"N0.csbox" "capacitor~instparams" (
+2.700000000000000e+01
+1.000000000000000e+00
+nan
+nan
+2.019127500000000e-15
+) PROP(
+"model" "capacitor"
+)
+"N0.cdbox" "capacitor~instparams" (
+2.700000000000000e+01
+1.000000000000000e+00
+nan
+nan
+2.019127500000000e-15
+) PROP(
+"model" "capacitor"
+)
+"N0.cbodybox" "capacitor~instparams" (
+2.700000000000000e+01
+1.000000000000000e+00
+nan
+nan
+2.761200000000000e-15
+) PROP(
+"model" "capacitor"
+)
+"VS" "vsource~instparams" (
+2.700000000000000e+01
+) PROP(
+"model" "vsource"
+)
+"VD" "vsource~instparams" (
+2.700000000000000e+01
+) PROP(
+"model" "vsource"
+)
+"VG" "vsource~instparams" (
+2.700000000000000e+01
+) PROP(
+"model" "vsource"
+)
+END

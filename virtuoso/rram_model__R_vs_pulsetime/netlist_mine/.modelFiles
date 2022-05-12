@@ -1,0 +1,7 @@
+include "/cad/kits/harvard/xfab_top/XKIT/xr013/cadence/v3_2/spectre/v3_2_1/core/config.scs" section=default
+include "/cad/kits/harvard/xfab_top/XKIT/xr013/cadence/v3_2/spectre/v3_2_1/core/param.scs" section=3s
+include "/cad/kits/harvard/xfab_top/XKIT/xr013/cadence/v3_2/spectre/v3_2_1/core/cap.scs" section=tm
+include "/cad/kits/harvard/xfab_top/XKIT/xr013/cadence/v3_2/spectre/v3_2_1/core/dio.scs" section=tm
+include "/cad/kits/harvard/xfab_top/XKIT/xr013/cadence/v3_2/spectre/v3_2_1/core/ind.scs" section=tm
+include "/cad/kits/harvard/xfab_top/XKIT/xr013/cadence/v3_2/spectre/v3_2_1/core/mos.scs" section=tm
+include "/cad/kits/harvard/xfab_top/XKIT/xr013/cadence/v3_2/spectre/v3_2_1/core/res.scs" section=tm

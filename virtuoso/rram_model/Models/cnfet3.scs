@@ -1,0 +1,362 @@
+simulator lang=spectre insensitive=yes
+
+section tt_ph2
+    include "cnfet3_params.scs" section=tt_ph2
+    include "cnfet3.scs" section=mos
+endsection tt_ph2
+
+section tt_cal
+    include "cnfet3_params.scs" section=tt_cal
+    include "cnfet3.scs" section=mos
+endsection tt_cal
+
+section tt
+    include "cnfet3_params.scs" section=tt
+    include "cnfet3.scs" section=mos
+endsection tt
+
+section ff
+    include "cnfet3_params.scs" section=ff
+    include "cnfet3.scs" section=mos
+endsection ff
+
+section ss
+    include "cnfet3_params.scs" section=ss
+    include "cnfet3.scs" section=mos
+endsection ss
+
+
+section mos
+ahdl_include "cnfet3.va"
+
+
+// ==================================================
+// NMOS
+// --------------------------------------------------
+subckt ncnfet3 ( D G S )
+
+parameters
+// give user control over the following parameters
++ w                    = 1.000   // transistor width [microns]
++ lch                  = 0.280   // channel length [microns]
++ lc                   = 0.280   // contact length [microns]
++ lun                  = 0.030   // gate underlap length under contact [microns]
++ wgeext               = 0.030   // gate width edge extension over active [microns]
++ wceext               = 0.030   // contact width edge extension over active [microns]
++ lctoact              = 0.030   // contact to active length [microns]
++ gidl_mod             = 1       // gate-induced drain leakage (gidl) mod, 1: use gidl model, 0: do not use gidl model
+
+    cnfet3_inst ( D G S S ) cnfet3
+    + FETtype              = 1
+    + w__m                 = 1e-6 * w
+    + lch__m               = 1e-6 * lch
+    + lg__m                = 1e-6 * (lch + 2*lun)
+    + lc__m                = 1e-6 * lc
+    + gidl_mod             = gidl_mod
+
+    // parameters in cnfet3_params.scs, user can't override
+    + mu_app__cm2_per_Vs   = nmos_mu_app__cm2_per_Vs
+    + vxo__cm_per_s        = nmos_vxo__cm_per_s
+    + tox__m               = nmos_tox__m
+    + kox                  = nmos_kox
+    + kspacer_sd           = nmos_kspacer_sd
+    + dibl__V_per_V        = nmos_dibl__V_per_V
+    + ss_fac               = nmos_ss_fac
+    + alpha                = nmos_alpha
+    + beta                 = nmos_beta
+    + rc__Ohm_m            = nmos_rc__Ohm_m
+//    + lch__m               = nmos_lch__m
+//    + lg__m                = nmos_lg__m
+//    + lc__m                = nmos_lc__m
+    + hg__m                = nmos_hg__m
+    + hc__m                = nmos_hc__m
+    + vt0__V               = nmos_vt0__V
+    + id_min__A_per_m      = nmos_id_min__A_per_m
+    + exp_power_model      = nmos_exp_power_model
+    + gidl_k0              = nmos_gidl_k0
+    + gidl_k1              = nmos_gidl_k1
+    + gidl_k2              = nmos_gidl_k2
+    + gidl_k3              = nmos_gidl_k3
+    + gidl_k4              = nmos_gidl_k4
+    + gidl_k5              = nmos_gidl_k5
+    + relative_meff        = nmos_relative_meff
+
+ends ncnfet3
+// ==================================================
+
+
+
+// ==================================================
+// PMOS
+// --------------------------------------------------
+subckt pcnfet3 ( D G S )
+
+parameters
+// give user control over the following parameters
++ w                    = 1.000   // transistor width [microns]
++ lch                  = 0.280   // channel length [microns]
++ lc                   = 0.280   // contact length [microns]
++ lun                  = 0.030   // gate underlap length under contact [microns]
++ wgeext               = 0.030   // gate width edge extension over active [microns]
++ wceext               = 0.030   // contact width edge extension over active [microns]
++ lctoact              = 0.030   // contact to active length [microns]
++ gidl_mod             = 1       // gate-induced drain leakage (gidl) mod, 1: use gidl model, 0: do not use gidl model
+
+    cnfet3_inst ( D G S S ) cnfet3
+    + FETtype              = -1
+    + w__m                 = 1e-6 * w
+    + lch__m               = 1e-6 * lch
+    + lg__m                = 1e-6 * (lch + 2*lun)
+    + lc__m                = 1e-6 * lc
+    + gidl_mod             = gidl_mod
+
+    // parameters in cnfet3_params.scs, user can't override
+    + mu_app__cm2_per_Vs   = pmos_mu_app__cm2_per_Vs
+    + vxo__cm_per_s        = pmos_vxo__cm_per_s
+    + tox__m               = pmos_tox__m
+    + kox                  = pmos_kox
+    + kspacer_sd           = pmos_kspacer_sd
+    + dibl__V_per_V        = pmos_dibl__V_per_V
+    + ss_fac               = pmos_ss_fac
+    + alpha                = pmos_alpha
+    + beta                 = pmos_beta
+    + rc__Ohm_m            = pmos_rc__Ohm_m
+//    + lch__m               = pmos_lch__m
+//    + lg__m                = pmos_lg__m
+//    + lc__m                = pmos_lc__m
+    + hg__m                = pmos_hg__m
+    + hc__m                = pmos_hc__m
+    + vt0__V               = pmos_vt0__V
+    + id_min__A_per_m      = pmos_id_min__A_per_m
+    + exp_power_model      = pmos_exp_power_model
+    + gidl_k0              = pmos_gidl_k0
+    + gidl_k1              = pmos_gidl_k1
+    + gidl_k2              = pmos_gidl_k2
+    + gidl_k3              = pmos_gidl_k3
+    + gidl_k4              = pmos_gidl_k4
+    + gidl_k5              = pmos_gidl_k5
+    + relative_meff        = pmos_relative_meff
+
+ends pcnfet3
+// ==================================================
+
+
+
+// ==================================================
+
+subckt ncnfet3_tier1 ( D G S )
+parameters
+// give user control over the following parameters
++ w                    = 2.150   // transistor width [microns]
++ lch                  = 0.450   // channel length [microns]
++ lc                   = 0.450   // contact length [microns]
++ lun                  = 0.050   // gate underlap length under contact [microns]
++ wgeext               = 0.050   // gate width edge extension over active [microns]
++ wceext               = 0.050   // contact width edge extension over active [microns]
++ lctoact              = 0.050   // contact to active length [microns]
++ gidl_mod             = 1       // gate-induced drain leakage (gidl) mod, 1: use gidl model, 0: do not use gidl model
+
+    ncnfet3_inst ( D G S ) ncnfet3
+    + w        = w
+    + lch      = lch
+    + lc       = lc
+    + lun      = lun
+    + wgeext   = wgeext
+    + wceext   = wceext
+    + lctoact  = lctoact
+    + gidl_mod = gidl_mod
+
+ends ncnfet3_tier1
+
+subckt pcnfet3_tier1 ( D G S )
+parameters
+// give user control over the following parameters
++ w                    = 2.150   // transistor width [microns]
++ lch                  = 0.450   // channel length [microns]
++ lc                   = 0.450   // contact length [microns]
++ lun                  = 0.050   // gate underlap length under contact [microns]
++ wgeext               = 0.050   // gate width edge extension over active [microns]
++ wceext               = 0.050   // contact width edge extension over active [microns]
++ lctoact              = 0.050   // contact to active length [microns]
++ gidl_mod             = 1       // gate-induced drain leakage (gidl) mod, 1: use gidl model, 0: do not use gidl model
+
+    pcnfet3_inst ( D G S ) pcnfet3
+    + w        = w
+    + lch      = lch
+    + lc       = lc
+    + lun      = lun
+    + wgeext   = wgeext
+    + wceext   = wceext
+    + lctoact  = lctoact
+    + gidl_mod = gidl_mod
+
+ends pcnfet3_tier1
+
+subckt ncnfet3_tier2 ( D G S )
+parameters
+// give user control over the following parameters
++ w                    = 2.150   // transistor width [microns]
++ lch                  = 0.450   // channel length [microns]
++ lc                   = 0.450   // contact length [microns]
++ lun                  = 0.050   // gate underlap length under contact [microns]
++ wgeext               = 0.050   // gate width edge extension over active [microns]
++ wceext               = 0.050   // contact width edge extension over active [microns]
++ lctoact              = 0.050   // contact to active length [microns]
++ gidl_mod             = 1       // gate-induced drain leakage (gidl) mod, 1: use gidl model, 0: do not use gidl model
+
+    ncnfet3_inst ( D G S ) ncnfet3
+    + w        = w
+    + lch      = lch
+    + lc       = lc
+    + lun      = lun
+    + wgeext   = wgeext
+    + wceext   = wceext
+    + lctoact  = lctoact
+    + gidl_mod = gidl_mod
+
+ends ncnfet3_tier2
+
+subckt pcnfet3_tier2 ( D G S )
+parameters
+// give user control over the following parameters
++ w                    = 2.150   // transistor width [microns]
++ lch                  = 0.450   // channel length [microns]
++ lc                   = 0.450   // contact length [microns]
++ lun                  = 0.050   // gate underlap length under contact [microns]
++ wgeext               = 0.050   // gate width edge extension over active [microns]
++ wceext               = 0.050   // contact width edge extension over active [microns]
++ lctoact              = 0.050   // contact to active length [microns]
++ gidl_mod             = 1       // gate-induced drain leakage (gidl) mod, 1: use gidl model, 0: do not use gidl model
+
+    pcnfet3_inst ( D G S ) pcnfet3
+    + w        = w
+    + lch      = lch
+    + lc       = lc
+    + lun      = lun
+    + wgeext   = wgeext
+    + wceext   = wceext
+    + lctoact  = lctoact
+    + gidl_mod = gidl_mod
+
+ends pcnfet3_tier2
+
+// ==================================================
+
+
+
+// ==================================================
+
+subckt ncnfet4_tier1 ( D G S B )
+parameters
+// give user control over the following parameters
++ w                    = 2.150   // transistor width [microns]
++ lch                  = 0.450   // channel length [microns]
++ lc                   = 0.450   // contact length [microns]
++ lun                  = 0.050   // gate underlap length under contact [microns]
++ wgeext               = 0.050   // gate width edge extension over active [microns]
++ wceext               = 0.050   // contact width edge extension over active [microns]
++ lctoact              = 0.050   // contact to active length [microns]
++ gidl_mod             = 1       // gate-induced drain leakage (gidl) mod, 1: use gidl model, 0: do not use gidl model
+
+    ncnfet3_inst ( D G S ) ncnfet3
+    + w        = w
+    + lch      = lch
+    + lc       = lc
+    + lun      = lun
+    + wgeext   = wgeext
+    + wceext   = wceext
+    + lctoact  = lctoact
+    + gidl_mod = gidl_mod
+
+ends ncnfet4_tier1
+
+subckt pcnfet4_tier1 ( D G S B )
+parameters
+// give user control over the following parameters
++ w                    = 2.150   // transistor width [microns]
++ lch                  = 0.450   // channel length [microns]
++ lc                   = 0.450   // contact length [microns]
++ lun                  = 0.050   // gate underlap length under contact [microns]
++ wgeext               = 0.050   // gate width edge extension over active [microns]
++ wceext               = 0.050   // contact width edge extension over active [microns]
++ lctoact              = 0.050   // contact to active length [microns]
++ gidl_mod             = 1       // gate-induced drain leakage (gidl) mod, 1: use gidl model, 0: do not use gidl model
+
+    pcnfet3_inst ( D G S ) pcnfet3
+    + w        = w
+    + lch      = lch
+    + lc       = lc
+    + lun      = lun
+    + wgeext   = wgeext
+    + wceext   = wceext
+    + lctoact  = lctoact
+    + gidl_mod = gidl_mod
+
+ends pcnfet4_tier1
+
+subckt ncnfet4_tier2 ( D G S B )
+parameters
+// give user control over the following parameters
++ w                    = 2.150   // transistor width [microns]
++ lch                  = 0.450   // channel length [microns]
++ lc                   = 0.450   // contact length [microns]
++ lun                  = 0.050   // gate underlap length under contact [microns]
++ wgeext               = 0.050   // gate width edge extension over active [microns]
++ wceext               = 0.050   // contact width edge extension over active [microns]
++ lctoact              = 0.050   // contact to active length [microns]
++ gidl_mod             = 1       // gate-induced drain leakage (gidl) mod, 1: use gidl model, 0: do not use gidl model
+
+    ncnfet3_inst ( D G S ) ncnfet3
+    + w        = w
+    + lch      = lch
+    + lc       = lc
+    + lun      = lun
+    + wgeext   = wgeext
+    + wceext   = wceext
+    + lctoact  = lctoact
+    + gidl_mod = gidl_mod
+
+ends ncnfet4_tier2
+
+subckt pcnfet4_tier2 ( D G S B )
+parameters
+// give user control over the following parameters
++ w                    = 2.150   // transistor width [microns]
++ lch                  = 0.450   // channel length [microns]
++ lc                   = 0.450   // contact length [microns]
++ lun                  = 0.050   // gate underlap length under contact [microns]
++ wgeext               = 0.050   // gate width edge extension over active [microns]
++ wceext               = 0.050   // contact width edge extension over active [microns]
++ lctoact              = 0.050   // contact to active length [microns]
++ gidl_mod             = 1       // gate-induced drain leakage (gidl) mod, 1: use gidl model, 0: do not use gidl model
+
+    pcnfet3_inst ( D G S ) pcnfet3
+    + w        = w
+    + lch      = lch
+    + lc       = lc
+    + lun      = lun
+    + wgeext   = wgeext
+    + wceext   = wceext
+    + lctoact  = lctoact
+    + gidl_mod = gidl_mod
+
+ends pcnfet4_tier2
+
+// ==================================================
+
+
+
+
+subckt NFET_wrapper ( D G S B )
+    ncnfet3_tier1_inst ( D G S ) ncnfet3_tier1
+ends NFET_wrapper
+
+
+
+subckt PFET_wrapper ( D G S B )
+    pcnfet3_tier1_inst ( D G S ) pcnfet3_tier1
+ends PFET_wrapper
+
+
+
+endsection mos

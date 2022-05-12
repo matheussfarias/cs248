@@ -1,0 +1,261 @@
+// Generic Virtual Source MOSFET model, adapted for CNFETs experimentally calibrated at MIT
+// calibrated by Gage Hills: ghills@mit.edu
+//
+// version history
+//     - version 0.01: 2018/05/16 - initial release
+//     - version 0.02: 2019/08/15 - added p_cnt and d_cnt for capacitance calculation
+//
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+`define NMOS 1
+`define PMOS -1
+
+`define SMALL_VALUE (1e-20)
+
+`define PI (3.1415)
+
+
+module cnfet3(D,G,S,B);
+    inout D, G, S, B;
+    electrical D, G, S, B;
+    electrical Di, Si; // internal nodes
+
+
+
+    // input parameters
+    parameter real          version              =   0.02        from (0:inf);             // version 0.01: initial release, 0.02: add p_cnt, d_cnt for capacitance calculation
+    parameter integer       FETtype              =   `NMOS       from [-1:1] exclude 0;    // NMOS: 1, PMOS: -1
+    parameter real          p_cnt__m             =   50e-9       from(0:inf);              // cnt pitch [m]
+    parameter real          d_cnt__m             =   2e-9        from(0:inf);              // cnt diameter [m]
+    parameter real          w__m                 =   1e-6        from(0:inf);              // transistor width [m]
+    parameter real          mu_app__cm2_per_Vs   =   387.626     from(0:inf);              // apparent mobility [cm^2/V.s]
+    parameter real          vxo__cm_per_s        =   0.0925e7    from(0:inf);              // injection velocity, corresponding to channel length lch__m [cm/s]
+    parameter real          tox__m               =   15e-9       from(0:inf);              // physical gate oxide thickness [m]
+    parameter real          kox                  =   10          from(0:inf);              // gate oxide dielectric constant [unitless]
+    parameter real          kspacer_sd           =   3.9         from(0:inf);              // dielectric constant of spacer between source and rain, above channel [unitless]
+    parameter real          dibl__V_per_V        =   0.029049;                             // drain-induced barrier lowering coefficient (DIBL) [V/V]
+    parameter real          ss_fac               =   3.688       from[1:inf);              // sub-threshold slope degradation factor [unitless]
+    parameter real          alpha                =   5.0         from[0:inf);              // fitting param for strong-weak inversion transition [unitless]
+    parameter real          beta                 =   2.5         from[0:inf);              // fitting param for saturation-nonsaturation transition [unitless]
+    parameter real          rc__Ohm_m            =   0           from[0:inf);              // parasitic series resistance [Ohm.m]
+    parameter real          lch__m               =   3.0e-6      from(0:inf);              // physical channel length, between the source and drain [m]
+    parameter real          lg__m                =   5.0e-6      from(0:inf);              // physical gate length, underneath the channel [m]
+    parameter real          lc__m                =   3.0e-6      from(0:inf);              // source/drain contact length [m]
+    parameter real          hg__m                =   20e-9       from(0:inf);              // gate height, underneath the channel [m]
+    parameter real          hc__m                =   75e-9       from(0:inf);              // source/drain contact height, above the channel [m]
+    parameter real          vt0__V               =   0.683;                                // strong inversion threshold voltage, for Vds = 0 [V]
+    parameter real          id_min__A_per_m      =   0           from[0:inf);              // minimum drain current [A/m]
+    parameter integer       exp_power_model      =   2           from[1:2];                // exponent for power model [unitless]
+    parameter real          gidl_k0              =   -7.7550;                              // gate-induced drain leakage (gidl) coefficient k0 [unitless]
+    parameter real          gidl_k1              =   +3.7214;                              // gidl coefficient k1 (for Vds) [1/V]
+    parameter real          gidl_k2              =   -2.1910;                              // gidl coefficient k2 (for Vgs) [1/V]
+    parameter real          gidl_k3              =   -0.7062;                              // gidl coefficient k3 (for Vds^2) [1/V^2]
+    parameter real          gidl_k4              =   -0.3109;                              // gidl coefficient k4 (for Vgs^2) [1/V^2]
+    parameter real          gidl_k5              =   +0.6298;                              // gidl coefficient k5 (for Vds*Vgs) [1/V^2]
+    parameter real          relative_meff        =   1.0         from (0:inf);             // relative effective mass [unitless]
+    parameter integer       gidl_mod             =   1           from [0:1];               // gidl mod, 0: do not include gidl, 1: do include gidl current
+
+
+
+    // local functions
+    analog function real mysqrt;
+        input x;
+        real x;
+        begin
+	    if (x >= 0) begin
+                mysqrt = sqrt(x);
+            end
+            else begin
+                mysqrt = -sqrt(-x);
+            end
+        end
+    endfunction // mysqrt
+
+    // local functions
+    analog function real mypow;
+        input x, e;
+        real x, e;
+        begin
+            if (x >= 0) begin
+                mypow = pow(x,e);
+            end
+            else begin
+                mypow = -pow(-x,e);
+            end
+         end
+    endfunction // mypow
+
+
+
+    // local variables
+    integer dir;
+    real vgsraw, vgdraw, vdsi, vgsi, vbsi;
+    real weff;
+    real vth, avt, ff, nss_vt, qxo, vdsats, vdsat, vds_vdsat, fs, ivs;
+    real vgt, vdsatq, fsatq, eta, eta2, eta3, fac1, qsDD, qdDD;
+    real kqb, kqb2, sq_kqb, tol, qsB, qdB, fsatq2, qcoms, qcomd, qints, qintd;
+    real qofs, qofd, qs, qd, qg, vthq, ffq, qxoq; 
+    real cmin, gmin;
+
+    // local variables: ghills
+    real igidl__A_per_m;
+    real Cinv__F_per_m2;
+    real eps0__F_per_m;
+    real Cpar_sdov__F_per_m2; // capacitance per unit area, for gate-to-source/drain overlap [F/m^2]
+    real lsdov__m;            // gate-to-source/drain overlap length [m]
+    real qsdovs__C_per_m, qsdovd__C_per_m; // charge for source/drain overlap, Coulombs per unit width [C/m]
+    real Cof__F_per_m;        // place-holder for outer-fringe capacitance (set to 0) [F/m]
+    real fs_gidl;
+
+
+    // main body
+    analog begin
+        vgsraw = FETtype * ( V(G) - V(Si) );
+        vgdraw = FETtype * ( V(G) - V(Di) );
+        if (vgsraw >= vgdraw) begin
+            //vds = FETtype * ( V(D) - V(S) ); 
+            //vgs = FETtype * ( V(G) - V(S) );
+            //vbs = FETtype * ( V(B) - V(S) );
+            vdsi = FETtype * ( V(Di) - V(Si) );
+            vgsi = vgsraw;
+            vbsi = FETtype * ( V(B) - V(Si) );
+	    dir  = 1;
+        end
+        else begin
+            //vds = FETtype * ( V(S) - V(D) );
+            //vgs = FETtype * ( V(G) - V(D) );
+            //vbs = FETtype * ( V(B) - V(D) );
+            vdsi = FETtype * ( V(Si) - V(Di) );
+            vgsi = vgdraw;
+            vbsi = FETtype * ( V(B) - V(Di) );
+            dir  = -1;
+        end
+
+
+        // ==================================================
+        // core current equations
+        // --------------------------------------------------
+        avt            = alpha*$vt;
+	vth            = FETtype * vt0__V - dibl__V_per_V * vdsi;        // threshold voltage, vt0__V has different sign for n/p, but dibl is the same sign
+        ff             = 1/(1+limexp((vgsi-(vth-avt/2))/avt)); // Fermi function
+	nss_vt         = ss_fac*$vt;
+
+        eps0__F_per_m  = 8.85e-12;
+	//Cinv__F_per_m2 = kox * eps0__F_per_m / tox__m; // version 0.01
+	Cinv__F_per_m2 = (kox * eps0__F_per_m / tox__m) * ((d_cnt__m * `PI) / p_cnt__m); // version 0.02
+
+        // virtual source charge modified to include exp_power_model
+        qxo            = Cinv__F_per_m2*nss_vt*mypow(ln(1+limexp((vgsi-(vth-avt*ff))/(nss_vt * exp_power_model)) + 0),exp_power_model);
+
+        // saturation behavior
+	vdsats         = (vxo__cm_per_s * 1e-2) * lch__m / (1e-4 * mu_app__cm2_per_Vs); // saturation voltage
+        vdsat          = vdsats*(1-ff)+$vt*ff;
+        vds_vdsat      = vdsi/vdsat;
+        fs             = vds_vdsat/mypow(1+mypow(vds_vdsat,beta),1/beta); // saturation function
+
+        // virtual source current
+        ivs            = qxo*(1e-2 * vxo__cm_per_s) * fs * dir * FETtype * w__m;
+        //$strobe("ivs = %.4g",ivs);
+
+	// gidl current
+        if ( gidl_mod == 0 ) begin
+            igidl__A_per_m = 0;
+        end else begin
+            fs_gidl = (vdsi/$vt) / sqrt(1 + (vdsi/$vt)*(vdsi/$vt)); // force gidl current to be 0 at vds = 0, using differentiable sigmoid function
+	    igidl__A_per_m = fs_gidl * mypow( 10, gidl_k0*1 + gidl_k1*vdsi + gidl_k2*vgsi + gidl_k3*vdsi*vdsi + gidl_k4*vgsi*vgsi + gidl_k5*vdsi*vgsi ) * dir * FETtype * w__m;
+        end
+        //$strobe("igidl__A_per_m = %.4g",igidl__A_per_m);
+
+        // assign current
+        I(Di,Si) <+ ivs;
+	I(Di,Si) <+ igidl__A_per_m;
+        // ==================================================
+
+
+
+        // ==================================================
+        // parasitic resistance
+        // --------------------------------------------------
+        if (rc__Ohm_m > 0) begin
+            I(D,Di) <+ (V(D)-V(Di))/(rc__Ohm_m/w__m);
+            I(Si,S) <+ (V(Si)-V(S))/(rc__Ohm_m/w__m);
+        end
+        else begin
+            V(D,Di) <+ 0.0;
+            V(Si,S) <+ 0.0;
+        end
+        // ==================================================
+
+
+
+        // ==================================================
+        // charge
+        // --------------------------------------------------
+
+        // drift-diffusion charge
+        vthq            = vth - 0.13;
+        ffq             = 1/(1+limexp((vgsi-(vthq-avt/2))/avt));
+        qxoq            = Cinv__F_per_m2*nss_vt*ln(1+limexp((vgsi-(vthq-avt*ffq))/nss_vt));
+        vgt             = qxoq/Cinv__F_per_m2;
+        vdsatq          = sqrt(ffq*avt*avt+vgt*vgt);
+        fsatq           = (vdsi/vdsatq)/(mypow(1+mypow(vdsi/vdsatq,beta),1/beta));
+        eta             = 1-fsatq;
+        eta2            = eta*eta;
+        eta3            = eta2*eta;
+        fac1            = qxoq/(15*(1+2*eta+eta2));
+        qsDD            = fac1*(6+12*eta+8*eta2+4*eta3);
+        qdDD            = fac1*(4+8*eta+12*eta2+6*eta3);
+
+        // ballistic charge
+        kqb             = 3.5126e11*vdsi/(relative_meff * (1e-2 * vxo__cm_per_s) * (1e-2 * vxo__cm_per_s)); // 3.5126e11 = 2*q/m0, q = 1.6e-19, m0 = 9.11e-31
+        kqb2            = kqb*kqb;
+        sq_kqb          = sqrt(kqb);
+        tol             = `SMALL_VALUE * ((1e-2 * vxo__cm_per_s) * (1e-2 * vxo__cm_per_s) * relative_meff/3.5126e11);
+        if ( vdsi < tol ) begin
+            qsB         = qxoq * (0.5 - kqb/24.0 + kqb2/80.0);
+            qdB         = qxoq * (0.5 - kqb/8.0  + kqb2/16.0);
+        end
+        else begin 
+            qsB         = qxoq * (asinh(sq_kqb)/sq_kqb-(sqrt(kqb+1)-1)/kqb);
+            qdB         = qxoq * ((sqrt(kqb+1)-1)/kqb);
+        end
+        fsatq2          = fsatq*fsatq;
+        qcoms           = qsDD*(1-fsatq2) + qsB*fsatq2;
+        qcomd           = qdDD*(1-fsatq2) + qdB*fsatq2;
+
+        // combined intrinsic charge [C/m]
+        qints           = FETtype * lch__m * (( 1 + dir ) * qcoms + ( 1 - dir ) * qcomd)/ 2.0;
+        qintd           = FETtype * lch__m * (( 1 - dir ) * qcoms + ( 1 + dir ) * qcomd)/ 2.0;
+
+        // fringe cap charge [C/m]
+        Cof__F_per_m    = 0;
+        qofs            = Cof__F_per_m*(V(G)-V(Si));
+        qofd            = Cof__F_per_m*(V(G)-V(Di));
+
+        // gate-to-source/drain overlap charge [C/m]
+        Cpar_sdov__F_per_m2 = kox * eps0__F_per_m / tox__m;
+        lsdov__m = 0.5 * (lg__m - lch__m);
+
+        qsdovs__C_per_m = Cpar_sdov__F_per_m2 * lsdov__m * (V(G)-V(S));
+        qsdovd__C_per_m = Cpar_sdov__F_per_m2 * lsdov__m * (V(G)-V(D));
+
+        // combined charge [C]
+        qs              = -w__m * (qints + qofs + qsdovs__C_per_m);
+        qd              = -w__m * (qintd + qofd + qsdovd__C_per_m);
+        qg              = -(qs+qd);
+
+        // assign
+        I(Si,B) <+ ddt(qs);
+        I(Di,B) <+ ddt(qd);
+        I(G,B)  <+ ddt(qg);
+        // ==================================================
+
+
+
+    end // analog
+
+
+
+endmodule

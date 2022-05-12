@@ -1,0 +1,3 @@
+simulator lang=spectre
+include "nmos2vbc_4.scs"
+include "rpoly1h_2t.scs"

@@ -1,0 +1,106 @@
+*********************************************
+**  models for resistance and capacitances **
+**           this is trtc corner           **
+*********************************************
+
+**********************************************
+**        tolerances of different layers    **
+**********************************************
+.param
++ tol_nfom=0
++ tol_pfom=0
++ tol_nw = 0  
++ tol_poly = 0                                                  
++ tol_li = 0         
++ tol_m1 = 0         
++ tol_m2 = 0         
++ tol_m3 = 0        $
++ tol_m4 = 0        $
++ tol_m5 = 0        $
++ tol_rdl = 0        $
+
+**********************************************
+**         typical resistances              **
+**********************************************
+
+.param 
++ rcn=182 
++ rcp=600 
++ rdn=120          
++ rdp=197          
++ rdn_hv=114          
++ rdp_hv=191          
++ rp1=48.2         
++ rnw=1700          
++ rl1=12.2    
++ rm1=0.125           
++ rm2=0.125       
++ rm3=0.047
++ rm4=0.047
++ rm5=0.0285
++ rrdl=0.005
++ rcp1=145.28       
++ rcl1=9.3
++ rcvia=4.5
++ rcvia2=3.41
++ rcvia3=3.41
++ rcvia4=0.38		
++ rcrdlcon=0.0058
++ rspwres=3816
+
+****** P+ Poly Preres Parameters ******
+.param
++ crpf_precision = 1.06e-04  $ F/m^2
++ crpfsw_precision_1_1 =  5.04e-11 $ F/m
++ crpfsw_precision_2_1 =  5.39e-11 $ F/m
++ crpfsw_precision_4_1 =  5.83e-11 $ F/m
++ crpfsw_precision_8_2 =  6.36e-11 $ F/m
++ crpfsw_precision_16_2 =  6.97e-11 $ F/m
+***************************************
+
+.include "r+c.mod"
+.include "tpar.cor"
+
+*** P+ Poly Preres Corner Parameters ***
+.param
++hrpoly_var_mult = 0
++camimc=  2.00e-15  $Units:  F/um^2
++cpmimc = 0.19e-15 $Units:  F/um
++cvpp_cor = 1.00
++cvpp3_cor = 1.00
++cvpp4_cor = 1.00
++cvpp5_cor = 1.00
++cm3m2_vpp = 1.00
++c0m5m4_vpp = 1.00
++c1m5m4_vpp = 1.00
++c0m5m4_vpp0p4shield = 1.00
++c1m5m4_vpp0p4shield = 1.00
++c0m4m3_vpp = 1.00
++c1m4m3_vpp = 1.00
++c0m5m3_vpp = 1.00
++c1m5m3_vpp = 1.00
++cpl2s_vpp = 1.00
++cpl2s_vpp0p4shield = 1.00
++cli2s_vpp = 1.00
++xcmvpp8p6x7p9_m3_lishield_cor = 1.00
++xcmvpp4p4x4p6_m3_lishield_cor = 1.00
++xcmvpp11p5x11p7_m3_lishield_cor = 1.00
++xcmvpp8p6x7p9_cor = 1.00
++xcmvpp4p4x4p6_cor = 1.00
++xcmvpp11p5x11p7_cor = 1.00
++xcmvpp1p8x1p8_cor = 1.00
++xcmvpp8p6x7p9_lishield_cor = 1.00
++xcmvpp4p4x4p6_lishield_cor = 1.00
++xcmvpp11p5x11p7_lishield_cor = 1.00
++xcmvpp8p6x7p9_m3shield_cor = 1.00
++xcmvpp4p4x4p6_m3shield_cor = 1.00
++xcmvpp11p5x11p7_m3shield_cor = 1.00
++xcmvpp1p8x1p8_m3shield_cor = 1.00
++xcmvpp11p5x11p7_m5shield_cor = 1.00
++xcmvpp11p5x11p7_polym5shield_cor = 1.00
++xcmvpp11p5x11p7_lim5shield_cor = 1.00
++xcmvpp8p6x7p9_m3_lim5shield_cor = 1.00
++xcmvpp6p8x6p1_cor = 1.00
++xcmvpp11p5x11p7_m4shield_cor = 1.0
++xcmvpp_atlas_cor = 1.0
++xcmvpp_hd5_cor = 1.0

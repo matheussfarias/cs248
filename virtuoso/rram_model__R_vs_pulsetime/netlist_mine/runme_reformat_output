@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#frne="input.rram.raw/tran.tran.tran"
+frne="input.rram.pulse.raw/tran.tran.tran"
+
+echo "time" > out.time.txt
+grep time $frne | tail -n +3 | awk '{ print $2 }' >> out.time.txt
+
+echo "I_Vd" > out.I_Vd.txt
+grep VD:p $frne | tail -n +2 | awk '{ print $2 }' >> out.I_Vd.txt
+
+echo "net_vg" > out.net_vg.txt
+grep net_vg $frne | tail -n +2 | awk '{ print $2 }' >> out.net_vg.txt
+
+echo "net_vd" > out.net_vd.txt
+grep net_vd $frne | tail -n +2 | awk '{ print $2 }' >> out.net_vd.txt
+
+echo "net_vs" > out.net_vs.txt
+grep net_vs $frne | tail -n +2 | awk '{ print $2 }' >> out.net_vs.txt

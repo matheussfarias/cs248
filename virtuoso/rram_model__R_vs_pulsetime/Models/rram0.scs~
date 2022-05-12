@@ -1,0 +1,102 @@
+simulator lang=spectre insensitive=yes
+
+section tt
+    include "rram0.scs" section=rram
+endsection tt 
+
+
+section rram
+ahdl_include "rram0.va"
+
+
+// ==================================================
+// RRAM
+// --------------------------------------------------
+subckt rram0 ( TE BE )
+parameters
+// --- device parameters
++ L       = 5e-9         // Oxide thickness (m)
++ gap_min = 0.1e-9       // Min. gap distance (m)
++ gap_max = 0.8e-9//1.7e-9       // Max. gap distance (m)
++ gap_ini = 0.1e-9       // Initial gap distance (m)
++ a0      = 0.25e-9      // Atomic distance (m)
++ Eag     = 1.501        // Activation energy for vacancy generation (eV)
++ Ear     = 1.5          // Activation energy for vacancy recombination (eV)
+// --- I-V characteristics
++ I0      = 6.14e-5 
++ g0      = 2.7505e-10
++ V0      = 0.43
+// --- gap dynamics
++ Vel0    = 150
++ gamma0  = 16.5
++ g1      = 1e-9
++ beta    = 1.25
+// --- temperature dynamics
++ T0      = 273+25       // Ambient temperature (K)
++ Cth     = 3.1825e-16   // Effective thermal capacitance (J/K)
++ Tau_th  = 2.3e-10      // Effective thermal time constant (s)
+// --- simulation time control
++ tstep   = 1e-9         // Max. internal timestep (s)	
+// --- resistance
++ Vread   = 0.1          // Read voltage (V)
+
+     rram0_inst ( TE BE ) rram0
+     + L       = L
+     + gap_min = gap_min
+     + gap_max = gap_max
+     + gap_ini = gap_ini
+     + a0      = a0
+     + Eag     = Eag
+     + Ear     = Ear
+     + I0      = I0
+     + g0      = g0
+     + V0      = V0
+     + Vel0    = Vel0
+     + gamma0  = gamma0
+     + g1      = g1
+     + beta    = beta
+     + T0      = T0
+     + Cth     = Cth
+     + Tau_th  = Tau_th
+     + tstep   = tstep
+     + Vread   = Vread
+
+ends rram0
+// ==================================================
+
+
+subckt rram0_tier1 ( TE BE )
+parameters
+// give user control over the following parameters
++ L       = 5e-9         // Oxide thickness (m)
++ gap_min = 0.1e-9       // Min. gap distance (m)
++ gap_max = 0.8e-9//1.7e-9       // Max. gap distance (m)
++ gap_ini = 0.1e-9       // Initial gap distance (m)
+
+    rram0_inst ( TE BE ) rram0
+    + L        = L
+    + gap_min  = gap_min
+    + gap_max  = gap_max
+    + gap_ini  = gap_ini
+
+ends rram0_tier1
+
+
+subckt rram0_tier2 ( TE BE )
+parameters
+// give user control over the following parameters
++ L       = 5e-9         // Oxide thickness (m)
++ gap_min = 0.1e-9       // Min. gap distance (m)
++ gap_max = 0.8e-9//1.7e-9       // Max. gap distance (m)
++ gap_ini = 0.1e-9       // Initial gap distance (m)
+
+    rram0_inst ( TE BE ) rram0
+    + L        = L
+    + gap_min  = gap_min
+    + gap_max  = gap_max
+    + gap_ini  = gap_ini
+
+ends rram0_tier2
+
+
+endsection rram

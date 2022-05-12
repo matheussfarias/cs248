@@ -1,0 +1,99 @@
+ahdlcmicompile: Compiling ahdlcmi in input.rram.ahdlSimDB//3c714abef2f0c75c2b056d1340b4673e.rram0.ahdlcmi/Linux-64/ for Linux-64 with optimize using gcc on Mon May  9 12:56:27 EDT 2022 [5.0]
+ahdlcmicompile: Generating makefile
+PATH:  /cad/tools/cadence/SPECTRE201/bin:/cad/tools/cadence/SPECTRE201/tools/bin/64bit:/cad/tools/cadence/SPECTRE201/tools/bin:/cad/kits/harvard/xfab_top/XKIT/x_all/cadence/xenv:/cad/tools/mentor/calibre/2021.3_15.9/bin:/cad/tools/synopsys/vcs-mx/O-2018.09-SP2-10/bin:/cad/tools/synopsys/pts/M-2016.12-SP2/bin:/cad/tools/synopsys/icc/K-2015.06-SP5/bin:/cad/tools/synopsys/syn/M-2016.12-SP2/bin:/cad/tools/cadence/INNOVUS201/tools/bin:/cad/tools/cadence/GENUS201/tools/bin:/cad/tools/cadence/IC618/tools/bin:/cad/tools/cadence/IC618/tools/dfII/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin
+LD_LIBRARY_PATH:  /cad/tools/cadence/SPECTRE201/tools/giganta/lib/64bit:/cad/tools/cadence/SPECTRE201/tools/mdl/lib/64bit:/cad/tools/cadence/SPECTRE201/tools/mmsim/lib/64bit:/cad/tools/cadence/SPECTRE201/tools/tcltk-8.4.20/lib/64bit:/cad/tools/cadence/SPECTRE201/tools/python/64bit/lib:/cad/tools/cadence/SPECTRE201/tools/inca/lib/64bit:/cad/tools/cadence/SPECTRE201/tools/awrmwo/lib/64bit:/cad/tools/cadence/SPECTRE201/tools/spectre/lib/64bit:/cad/tools/cadence/SPECTRE201/tools/dfII/lib/64bit:/cad/tools/cadence/SPECTRE201/tools/fmc/lib/64bit:/cad/tools/cadence/SPECTRE201/tools/lib/64bit:/cad/tools/cadence/SPECTRE201/tools/lib/64bit:/cad/tools/cadence/SPECTRE201/tools/lib:/cad/tools/cadence/SPECTRE201/tools/lib/64bit/RHEL/RHEL7:/cad/tools/cadence/INNOVUS201/tools/lib/64bit:/cad/tools/cadence/INNOVUS201/oa_v22.60.057/lib/linux_rhel60_64/opt
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/bin/gnumake -j1 -f GNUmakefile
+gnumake[1]: Entering directory '/home/ghills/design_labs/rram_model/netlist_mine/input.rram.ahdlSimDB/3c714abef2f0c75c2b056d1340b4673e.rram0.ahdlcmi/Linux-64'
+Cleaning ./obj/optimize/5.0
+rm -f -rf ./obj/optimize/5.0
+gnumake[1]: Leaving directory '/home/ghills/design_labs/rram_model/netlist_mine/input.rram.ahdlSimDB/3c714abef2f0c75c2b056d1340b4673e.rram0.ahdlcmi/Linux-64'
+gnumake[1]: Entering directory '/home/ghills/design_labs/rram_model/netlist_mine/input.rram.ahdlSimDB/3c714abef2f0c75c2b056d1340b4673e.rram0.ahdlcmi/Linux-64'
+Compiling C file rram0_func.c (optimize)
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /cad/tools/cadence/SPECTRE201/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include -c rram0_func.c -o obj/optimize/5.0/rram0_func.o || rm -f -f obj/optimize/5.0/rram0_func.o
+rm -f -rf rram0_func.c
+Compiling C file rram0_DcFuncDerLoad.c (optimize)
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /cad/tools/cadence/SPECTRE201/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include -c rram0_DcFuncDerLoad.c -o obj/optimize/5.0/rram0_DcFuncDerLoad.o || rm -f -f obj/optimize/5.0/rram0_DcFuncDerLoad.o
+rm -f -rf rram0_DcFuncDerLoad.c
+Compiling C file rram0_DcFuncLoad.c (optimize)
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /cad/tools/cadence/SPECTRE201/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include -c rram0_DcFuncLoad.c -o obj/optimize/5.0/rram0_DcFuncLoad.o || rm -f -f obj/optimize/5.0/rram0_DcFuncLoad.o
+rm -f -rf rram0_DcFuncLoad.c
+Compiling C file rram0_TranFuncDerLoad.c (optimize)
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /cad/tools/cadence/SPECTRE201/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include -c rram0_TranFuncDerLoad.c -o obj/optimize/5.0/rram0_TranFuncDerLoad.o || rm -f -f obj/optimize/5.0/rram0_TranFuncDerLoad.o
+rm -f -rf rram0_TranFuncDerLoad.c
+Compiling C file rram0_TranFuncLoad.c (optimize)
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /cad/tools/cadence/SPECTRE201/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include -c rram0_TranFuncLoad.c -o obj/optimize/5.0/rram0_TranFuncLoad.o || rm -f -f obj/optimize/5.0/rram0_TranFuncLoad.o
+rm -f -rf rram0_TranFuncLoad.c
+Compiling C file rram0_OpPointCalc.c (optimize)
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /cad/tools/cadence/SPECTRE201/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include -c rram0_OpPointCalc.c -o obj/optimize/5.0/rram0_OpPointCalc.o || rm -f -f obj/optimize/5.0/rram0_OpPointCalc.o
+rm -f -rf rram0_OpPointCalc.c
+Compiling C file rram0_cmi_c.c (optimize)
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /cad/tools/cadence/SPECTRE201/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include -I/cad/tools/cadence/SPECTRE201/tools.lnx86/cmi/include -c rram0_cmi_c.c -o obj/optimize/5.0/rram0_cmi_c.o || rm -f -f obj/optimize/5.0/rram0_cmi_c.o
+<stdin>: In function 'rram0_pPrintDescription':
+<stdin>:1317:3: warning: implicit declaration of function 'msgWrite' [-Wimplicit-function-declaration]
+<stdin>:1319:67: warning: implicit declaration of function 'devGetRFinFreqDomain' [-Wimplicit-function-declaration]
+<stdin>: In function 'rram0_pGetInstanceParams':
+<stdin>:1548:41: warning: implicit declaration of function 'devGetInstKnotStatus' [-Wimplicit-function-declaration]
+<stdin>: In function 'rram0_pDC_Load':
+<stdin>:1832:33: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2803:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'rram0_pCompare':
+<stdin>:2252:3: warning: implicit declaration of function 'spReplaceMatrixPointer' [-Wimplicit-function-declaration]
+<stdin>:2258:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>:2259:12: warning: passing argument 1 of 'memcpy' makes pointer from integer without a cast [-Wint-conversion]
+In file included from /cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'void * restrict' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^~~~~~
+<stdin>:2259:47: warning: passing argument 2 of 'memcpy' makes pointer from integer without a cast [-Wint-conversion]
+In file included from /cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include/ahdlPiCmi.h:5:0,
+                 from /cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:83,
+                 from <stdin>:24:
+/usr/include/string.h:42:14: note: expected 'const void * restrict' but argument is of type 'long int'
+ extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+              ^~~~~~
+<stdin>:2261:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>: In function 'rram0_pMapSignals':
+<stdin>:2321:26: warning: comparison between pointer and integer
+<stdin>: In function 'rram0_pGetMatrixPointers':
+<stdin>:2441:34: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>:2443:37: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+<stdin>: In function 'rram0_pAnalTranLoad':
+<stdin>:3202:34: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2803:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>:3204:31: warning: passing argument 1 of 'aslDevFillZeroDiagQuartet' makes pointer from integer without a cast [-Wint-conversion]
+In file included from <stdin>:24:0:
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2805:33: note: expected 'void *' but argument is of type 'long int'
+ ASL_FUNC_DECL_START extern void aslDevFillZeroDiagQuartet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+<stdin>: In function 'rram0_pSaveRestart':
+<stdin>:3478:4: warning: implicit declaration of function 'pklAccessDouble' [-Wimplicit-function-declaration]
+<stdin>:3482:30: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [-Wincompatible-pointer-types]
+In file included from <stdin>:24:0:
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1265:39: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+ ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                       ^~~~~~~~~~~~
+<stdin>: In function 'rram0_pSaveRestartInst':
+<stdin>:3552:28: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [-Wincompatible-pointer-types]
+In file included from <stdin>:24:0:
+/cad/tools/cadence/SPECTRE201/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1265:39: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+ ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                       ^~~~~~~~~~~~
+<stdin>: In function 'ahdlrram0DescInstall':
+<stdin>:3714:2: warning: implicit declaration of function 'descSetDeviceType' [-Wimplicit-function-declaration]
+<stdin>:3716:2: warning: implicit declaration of function 'descSetSetContrInfoPtr' [-Wimplicit-function-declaration]
+<stdin>:3723:2: warning: implicit declaration of function 'descSetCopySignals' [-Wimplicit-function-declaration]
+<stdin>:3752:2: warning: implicit declaration of function 'descSetPrintDescription' [-Wimplicit-function-declaration]
+<stdin>:3754:2: warning: implicit declaration of function 'descSetGetNodeNamesForBranch' [-Wimplicit-function-declaration]
+<stdin>:3755:2: warning: implicit declaration of function 'descSetGetLinearityFactor' [-Wimplicit-function-declaration]
+rm -f -rf rram0_cmi_c.c
+/cad/tools/cadence/SPECTRE201/tools.lnx86/cdsgcc/gcc/6.3/bin/gcc -shared -O3 -m64 -fPIC -o obj/optimize/5.0/libahdlcmi_rram0.so ./obj/optimize/5.0/rram0_func.o ./obj/optimize/5.0/rram0_DcFuncDerLoad.o ./obj/optimize/5.0/rram0_DcFuncLoad.o ./obj/optimize/5.0/rram0_TranFuncDerLoad.o ./obj/optimize/5.0/rram0_TranFuncLoad.o ./obj/optimize/5.0/rram0_OpPointCalc.o ./obj/optimize/5.0/rram0_cmi_c.o  -Wl,-rpath,/usr/lib -Wl,-rpath,/lib -s 
+rm -f -f ./obj/optimize/5.0/rram0_func.o ./obj/optimize/5.0/rram0_DcFuncDerLoad.o ./obj/optimize/5.0/rram0_DcFuncLoad.o ./obj/optimize/5.0/rram0_TranFuncDerLoad.o ./obj/optimize/5.0/rram0_TranFuncLoad.o ./obj/optimize/5.0/rram0_OpPointCalc.o ./obj/optimize/5.0/rram0_cmi_c.o 
+gnumake[1]: Leaving directory '/home/ghills/design_labs/rram_model/netlist_mine/input.rram.ahdlSimDB/3c714abef2f0c75c2b056d1340b4673e.rram0.ahdlcmi/Linux-64'
